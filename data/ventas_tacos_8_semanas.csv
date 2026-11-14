@@ -1,0 +1,673 @@
+﻿Fecha,Guisado o bebida,Cantidad vendida,Precio unitario (MXN),Total vendido (MXN),Llovió,Disponible
+2026-09-01,Agua del día,15,15,225,1,1
+2026-09-01,Chicharrón,10,15,150,1,1
+2026-09-01,Frijoles,4,15,60,1,1
+2026-09-01,Huevo con jamón,13,15,195,1,1
+2026-09-01,Lengua,4,15,60,1,1
+2026-09-01,Machaca,5,15,75,1,1
+2026-09-01,Pepena,3,15,45,1,1
+2026-09-01,Pollo con crema,15,15,225,1,1
+2026-09-01,Pollo en salsa verde,18,15,270,1,1
+2026-09-01,Puerco con calabacitas,7,15,105,1,1
+2026-09-01,Refresco,12,20,240,1,1
+2026-09-01,Res a la mexicana,9,15,135,1,1
+2026-09-02,Agua del día,12,15,180,0,1
+2026-09-02,Chicharrón,23,15,345,0,1
+2026-09-02,Frijoles,3,15,45,0,1
+2026-09-02,Huevo con jamón,13,15,195,0,1
+2026-09-02,Lengua,5,15,75,0,1
+2026-09-02,Machaca,7,15,105,0,1
+2026-09-02,Pepena,7,15,105,0,1
+2026-09-02,Pollo con crema,2,15,30,0,1
+2026-09-02,Pollo en salsa verde,9,15,135,0,1
+2026-09-02,Puerco con calabacitas,2,15,30,0,1
+2026-09-02,Refresco,19,20,380,0,1
+2026-09-02,Res a la mexicana,15,15,225,0,1
+2026-09-03,Agua del día,14,15,210,0,1
+2026-09-03,Chicharrón,0,15,0,0,0
+2026-09-03,Frijoles,3,15,45,0,1
+2026-09-03,Huevo con jamón,12,15,180,0,1
+2026-09-03,Lengua,4,15,60,0,1
+2026-09-03,Machaca,1,15,15,0,1
+2026-09-03,Pepena,3,15,45,0,1
+2026-09-03,Pollo con crema,10,15,150,0,1
+2026-09-03,Pollo en salsa verde,14,15,210,0,1
+2026-09-03,Puerco con calabacitas,7,15,105,0,1
+2026-09-03,Refresco,8,20,160,0,1
+2026-09-03,Res a la mexicana,6,15,90,0,1
+2026-09-04,Agua del día,10,15,150,0,1
+2026-09-04,Chicharrón,11,15,165,0,1
+2026-09-04,Frijoles,5,15,75,0,1
+2026-09-04,Huevo con jamón,4,15,60,0,1
+2026-09-04,Lengua,11,15,165,0,1
+2026-09-04,Machaca,1,15,15,0,1
+2026-09-04,Pepena,7,15,105,0,1
+2026-09-04,Pollo con crema,0,15,0,0,0
+2026-09-04,Pollo en salsa verde,17,15,255,0,1
+2026-09-04,Puerco con calabacitas,4,15,60,0,1
+2026-09-04,Refresco,15,20,300,0,1
+2026-09-04,Res a la mexicana,6,15,90,0,1
+2026-09-05,Agua del día,11,15,165,0,1
+2026-09-05,Chicharrón,20,15,300,0,1
+2026-09-05,Frijoles,3,15,45,0,1
+2026-09-05,Huevo con jamón,1,15,15,0,1
+2026-09-05,Lengua,5,15,75,0,1
+2026-09-05,Machaca,6,15,90,0,1
+2026-09-05,Pepena,11,15,165,0,1
+2026-09-05,Pollo con crema,2,15,30,0,1
+2026-09-05,Pollo en salsa verde,11,15,165,0,1
+2026-09-05,Puerco con calabacitas,12,15,180,0,1
+2026-09-05,Refresco,7,20,140,0,1
+2026-09-05,Res a la mexicana,3,15,45,0,1
+2026-09-06,Agua del día,12,15,180,0,1
+2026-09-06,Chicharrón,15,15,225,0,1
+2026-09-06,Frijoles,3,15,45,0,1
+2026-09-06,Huevo con jamón,8,15,120,0,1
+2026-09-06,Lengua,3,15,45,0,1
+2026-09-06,Machaca,6,15,90,0,1
+2026-09-06,Pepena,4,15,60,0,1
+2026-09-06,Pollo con crema,16,15,240,0,1
+2026-09-06,Pollo en salsa verde,6,15,90,0,1
+2026-09-06,Puerco con calabacitas,9,15,135,0,1
+2026-09-06,Refresco,19,20,380,0,1
+2026-09-06,Res a la mexicana,1,15,15,0,1
+2026-09-07,Agua del día,10,15,150,0,1
+2026-09-07,Chicharrón,14,15,210,0,1
+2026-09-07,Frijoles,8,15,120,0,1
+2026-09-07,Huevo con jamón,24,15,360,0,1
+2026-09-07,Lengua,10,15,150,0,1
+2026-09-07,Machaca,1,15,15,0,1
+2026-09-07,Pepena,6,15,90,0,1
+2026-09-07,Pollo con crema,6,15,90,0,1
+2026-09-07,Pollo en salsa verde,11,15,165,0,1
+2026-09-07,Puerco con calabacitas,12,15,180,0,1
+2026-09-07,Refresco,2,20,40,0,1
+2026-09-07,Res a la mexicana,12,15,180,0,1
+2026-09-08,Agua del día,12,15,180,1,1
+2026-09-08,Chicharrón,7,15,105,1,1
+2026-09-08,Frijoles,7,15,105,1,1
+2026-09-08,Huevo con jamón,8,15,120,1,1
+2026-09-08,Lengua,3,15,45,1,1
+2026-09-08,Machaca,4,15,60,1,1
+2026-09-08,Pepena,1,15,15,1,1
+2026-09-08,Pollo con crema,0,15,0,1,0
+2026-09-08,Pollo en salsa verde,10,15,150,1,1
+2026-09-08,Puerco con calabacitas,10,15,150,1,1
+2026-09-08,Refresco,7,20,140,1,1
+2026-09-08,Res a la mexicana,9,15,135,1,1
+2026-09-09,Agua del día,10,15,150,0,1
+2026-09-09,Chicharrón,9,15,135,0,1
+2026-09-09,Frijoles,9,15,135,0,1
+2026-09-09,Huevo con jamón,8,15,120,0,1
+2026-09-09,Lengua,3,15,45,0,1
+2026-09-09,Machaca,4,15,60,0,1
+2026-09-09,Pepena,5,15,75,0,1
+2026-09-09,Pollo con crema,11,15,165,0,1
+2026-09-09,Pollo en salsa verde,2,15,30,0,1
+2026-09-09,Puerco con calabacitas,6,15,90,0,1
+2026-09-09,Refresco,6,20,120,0,1
+2026-09-09,Res a la mexicana,3,15,45,0,1
+2026-09-10,Agua del día,6,15,90,1,1
+2026-09-10,Chicharrón,11,15,165,1,1
+2026-09-10,Frijoles,4,15,60,1,1
+2026-09-10,Huevo con jamón,13,15,195,1,1
+2026-09-10,Lengua,0,15,0,1,0
+2026-09-10,Machaca,4,15,60,1,1
+2026-09-10,Pepena,3,15,45,1,1
+2026-09-10,Pollo con crema,6,15,90,1,1
+2026-09-10,Pollo en salsa verde,9,15,135,1,1
+2026-09-10,Puerco con calabacitas,5,15,75,1,1
+2026-09-10,Refresco,19,20,380,1,1
+2026-09-10,Res a la mexicana,4,15,60,1,1
+2026-09-11,Agua del día,14,15,210,0,1
+2026-09-11,Chicharrón,9,15,135,0,1
+2026-09-11,Frijoles,7,15,105,0,1
+2026-09-11,Huevo con jamón,14,15,210,0,1
+2026-09-11,Lengua,4,15,60,0,1
+2026-09-11,Machaca,6,15,90,0,1
+2026-09-11,Pepena,9,15,135,0,1
+2026-09-11,Pollo con crema,18,15,270,0,1
+2026-09-11,Pollo en salsa verde,4,15,60,0,1
+2026-09-11,Puerco con calabacitas,7,15,105,0,1
+2026-09-11,Refresco,13,20,260,0,1
+2026-09-11,Res a la mexicana,4,15,60,0,1
+2026-09-12,Agua del día,26,15,390,0,1
+2026-09-12,Chicharrón,12,15,180,0,1
+2026-09-12,Frijoles,12,15,180,0,1
+2026-09-12,Huevo con jamón,12,15,180,0,1
+2026-09-12,Lengua,6,15,90,0,1
+2026-09-12,Machaca,8,15,120,0,1
+2026-09-12,Pepena,12,15,180,0,1
+2026-09-12,Pollo con crema,15,15,225,0,1
+2026-09-12,Pollo en salsa verde,12,15,180,0,1
+2026-09-12,Puerco con calabacitas,1,15,15,0,1
+2026-09-12,Refresco,15,20,300,0,1
+2026-09-12,Res a la mexicana,3,15,45,0,1
+2026-09-13,Agua del día,8,15,120,0,1
+2026-09-13,Chicharrón,4,15,60,0,1
+2026-09-13,Frijoles,6,15,90,0,1
+2026-09-13,Huevo con jamón,7,15,105,0,1
+2026-09-13,Lengua,9,15,135,0,1
+2026-09-13,Machaca,3,15,45,0,1
+2026-09-13,Pepena,6,15,90,0,1
+2026-09-13,Pollo con crema,8,15,120,0,1
+2026-09-13,Pollo en salsa verde,3,15,45,0,1
+2026-09-13,Puerco con calabacitas,6,15,90,0,1
+2026-09-13,Refresco,5,20,100,0,1
+2026-09-13,Res a la mexicana,4,15,60,0,1
+2026-09-14,Agua del día,12,15,180,0,1
+2026-09-14,Chicharrón,22,15,330,0,1
+2026-09-14,Frijoles,8,15,120,0,1
+2026-09-14,Huevo con jamón,6,15,90,0,1
+2026-09-14,Lengua,7,15,105,0,1
+2026-09-14,Machaca,1,15,15,0,1
+2026-09-14,Pepena,2,15,30,0,1
+2026-09-14,Pollo con crema,1,15,15,0,1
+2026-09-14,Pollo en salsa verde,10,15,150,0,1
+2026-09-14,Puerco con calabacitas,0,15,0,0,1
+2026-09-14,Refresco,9,20,180,0,1
+2026-09-14,Res a la mexicana,4,15,60,0,1
+2026-09-15,Agua del día,16,15,240,0,1
+2026-09-15,Chicharrón,0,15,0,0,0
+2026-09-15,Frijoles,7,15,105,0,1
+2026-09-15,Huevo con jamón,8,15,120,0,1
+2026-09-15,Lengua,8,15,120,0,1
+2026-09-15,Machaca,1,15,15,0,1
+2026-09-15,Pepena,14,15,210,0,1
+2026-09-15,Pollo con crema,9,15,135,0,1
+2026-09-15,Pollo en salsa verde,16,15,240,0,1
+2026-09-15,Puerco con calabacitas,3,15,45,0,1
+2026-09-15,Refresco,7,20,140,0,1
+2026-09-15,Res a la mexicana,4,15,60,0,1
+2026-09-16,Agua del día,8,15,120,0,1
+2026-09-16,Chicharrón,11,15,165,0,1
+2026-09-16,Frijoles,8,15,120,0,1
+2026-09-16,Huevo con jamón,8,15,120,0,1
+2026-09-16,Lengua,5,15,75,0,1
+2026-09-16,Machaca,7,15,105,0,1
+2026-09-16,Pepena,5,15,75,0,1
+2026-09-16,Pollo con crema,6,15,90,0,1
+2026-09-16,Pollo en salsa verde,7,15,105,0,1
+2026-09-16,Puerco con calabacitas,7,15,105,0,1
+2026-09-16,Refresco,19,20,380,0,1
+2026-09-16,Res a la mexicana,8,15,120,0,1
+2026-09-17,Agua del día,24,15,360,0,1
+2026-09-17,Chicharrón,10,15,150,0,1
+2026-09-17,Frijoles,9,15,135,0,1
+2026-09-17,Huevo con jamón,10,15,150,0,1
+2026-09-17,Lengua,14,15,210,0,1
+2026-09-17,Machaca,10,15,150,0,1
+2026-09-17,Pepena,1,15,15,0,1
+2026-09-17,Pollo con crema,12,15,180,0,1
+2026-09-17,Pollo en salsa verde,7,15,105,0,1
+2026-09-17,Puerco con calabacitas,4,15,60,0,1
+2026-09-17,Refresco,13,20,260,0,1
+2026-09-17,Res a la mexicana,11,15,165,0,1
+2026-09-18,Agua del día,10,15,150,0,1
+2026-09-18,Chicharrón,10,15,150,0,1
+2026-09-18,Frijoles,4,15,60,0,1
+2026-09-18,Huevo con jamón,9,15,135,0,1
+2026-09-18,Lengua,9,15,135,0,1
+2026-09-18,Machaca,5,15,75,0,1
+2026-09-18,Pepena,7,15,105,0,1
+2026-09-18,Pollo con crema,3,15,45,0,1
+2026-09-18,Pollo en salsa verde,8,15,120,0,1
+2026-09-18,Puerco con calabacitas,4,15,60,0,1
+2026-09-18,Refresco,19,20,380,0,1
+2026-09-18,Res a la mexicana,9,15,135,0,1
+2026-09-19,Agua del día,1,15,15,1,1
+2026-09-19,Chicharrón,11,15,165,1,1
+2026-09-19,Frijoles,3,15,45,1,1
+2026-09-19,Huevo con jamón,3,15,45,1,1
+2026-09-19,Lengua,2,15,30,1,1
+2026-09-19,Machaca,6,15,90,1,1
+2026-09-19,Pepena,2,15,30,1,1
+2026-09-19,Pollo con crema,0,15,0,1,0
+2026-09-19,Pollo en salsa verde,6,15,90,1,1
+2026-09-19,Puerco con calabacitas,1,15,15,1,1
+2026-09-19,Refresco,7,20,140,1,1
+2026-09-19,Res a la mexicana,2,15,30,1,1
+2026-09-20,Agua del día,9,15,135,1,1
+2026-09-20,Chicharrón,0,15,0,1,1
+2026-09-20,Frijoles,6,15,90,1,1
+2026-09-20,Huevo con jamón,9,15,135,1,1
+2026-09-20,Lengua,1,15,15,1,1
+2026-09-20,Machaca,7,15,105,1,1
+2026-09-20,Pepena,2,15,30,1,1
+2026-09-20,Pollo con crema,4,15,60,1,1
+2026-09-20,Pollo en salsa verde,10,15,150,1,1
+2026-09-20,Puerco con calabacitas,7,15,105,1,1
+2026-09-20,Refresco,5,20,100,1,1
+2026-09-20,Res a la mexicana,4,15,60,1,1
+2026-09-21,Agua del día,10,15,150,0,1
+2026-09-21,Chicharrón,12,15,180,0,1
+2026-09-21,Frijoles,7,15,105,0,1
+2026-09-21,Huevo con jamón,3,15,45,0,1
+2026-09-21,Lengua,4,15,60,0,1
+2026-09-21,Machaca,4,15,60,0,1
+2026-09-21,Pepena,8,15,120,0,1
+2026-09-21,Pollo con crema,2,15,30,0,1
+2026-09-21,Pollo en salsa verde,13,15,195,0,1
+2026-09-21,Puerco con calabacitas,1,15,15,0,1
+2026-09-21,Refresco,32,20,640,0,1
+2026-09-21,Res a la mexicana,6,15,90,0,1
+2026-09-22,Agua del día,10,15,150,0,1
+2026-09-22,Chicharrón,19,15,285,0,1
+2026-09-22,Frijoles,22,15,330,0,1
+2026-09-22,Huevo con jamón,7,15,105,0,1
+2026-09-22,Lengua,7,15,105,0,1
+2026-09-22,Machaca,2,15,30,0,1
+2026-09-22,Pepena,1,15,15,0,1
+2026-09-22,Pollo con crema,0,15,0,0,0
+2026-09-22,Pollo en salsa verde,13,15,195,0,1
+2026-09-22,Puerco con calabacitas,4,15,60,0,1
+2026-09-22,Refresco,14,20,280,0,1
+2026-09-22,Res a la mexicana,15,15,225,0,1
+2026-09-23,Agua del día,6,15,90,0,1
+2026-09-23,Chicharrón,14,15,210,0,1
+2026-09-23,Frijoles,5,15,75,0,1
+2026-09-23,Huevo con jamón,16,15,240,0,1
+2026-09-23,Lengua,5,15,75,0,1
+2026-09-23,Machaca,5,15,75,0,1
+2026-09-23,Pepena,9,15,135,0,1
+2026-09-23,Pollo con crema,8,15,120,0,1
+2026-09-23,Pollo en salsa verde,4,15,60,0,1
+2026-09-23,Puerco con calabacitas,5,15,75,0,1
+2026-09-23,Refresco,7,20,140,0,1
+2026-09-23,Res a la mexicana,2,15,30,0,1
+2026-09-24,Agua del día,9,15,135,1,1
+2026-09-24,Chicharrón,3,15,45,1,1
+2026-09-24,Frijoles,8,15,120,1,1
+2026-09-24,Huevo con jamón,4,15,60,1,1
+2026-09-24,Lengua,11,15,165,1,1
+2026-09-24,Machaca,2,15,30,1,1
+2026-09-24,Pepena,0,15,0,1,0
+2026-09-24,Pollo con crema,6,15,90,1,1
+2026-09-24,Pollo en salsa verde,4,15,60,1,1
+2026-09-24,Puerco con calabacitas,8,15,120,1,1
+2026-09-24,Refresco,4,20,80,1,1
+2026-09-24,Res a la mexicana,8,15,120,1,1
+2026-09-25,Agua del día,5,15,75,0,1
+2026-09-25,Chicharrón,10,15,150,0,1
+2026-09-25,Frijoles,11,15,165,0,1
+2026-09-25,Huevo con jamón,11,15,165,0,1
+2026-09-25,Lengua,13,15,195,0,1
+2026-09-25,Machaca,6,15,90,0,1
+2026-09-25,Pepena,1,15,15,0,1
+2026-09-25,Pollo con crema,10,15,150,0,1
+2026-09-25,Pollo en salsa verde,5,15,75,0,1
+2026-09-25,Puerco con calabacitas,8,15,120,0,1
+2026-09-25,Refresco,14,20,280,0,1
+2026-09-25,Res a la mexicana,4,15,60,0,1
+2026-09-26,Agua del día,10,15,150,0,1
+2026-09-26,Chicharrón,19,15,285,0,1
+2026-09-26,Frijoles,1,15,15,0,1
+2026-09-26,Huevo con jamón,13,15,195,0,1
+2026-09-26,Lengua,4,15,60,0,1
+2026-09-26,Machaca,5,15,75,0,1
+2026-09-26,Pepena,7,15,105,0,1
+2026-09-26,Pollo con crema,6,15,90,0,1
+2026-09-26,Pollo en salsa verde,2,15,30,0,1
+2026-09-26,Puerco con calabacitas,5,15,75,0,1
+2026-09-26,Refresco,7,20,140,0,1
+2026-09-26,Res a la mexicana,3,15,45,0,1
+2026-09-27,Agua del día,6,15,90,1,1
+2026-09-27,Chicharrón,5,15,75,1,1
+2026-09-27,Frijoles,8,15,120,1,1
+2026-09-27,Huevo con jamón,2,15,30,1,1
+2026-09-27,Lengua,3,15,45,1,1
+2026-09-27,Machaca,4,15,60,1,1
+2026-09-27,Pepena,2,15,30,1,1
+2026-09-27,Pollo con crema,2,15,30,1,1
+2026-09-27,Pollo en salsa verde,5,15,75,1,1
+2026-09-27,Puerco con calabacitas,3,15,45,1,1
+2026-09-27,Refresco,9,20,180,1,1
+2026-09-27,Res a la mexicana,4,15,60,1,1
+2026-09-28,Agua del día,5,15,75,0,1
+2026-09-28,Chicharrón,12,15,180,0,1
+2026-09-28,Frijoles,2,15,30,0,1
+2026-09-28,Huevo con jamón,7,15,105,0,1
+2026-09-28,Lengua,4,15,60,0,1
+2026-09-28,Machaca,4,15,60,0,1
+2026-09-28,Pepena,5,15,75,0,1
+2026-09-28,Pollo con crema,6,15,90,0,1
+2026-09-28,Pollo en salsa verde,17,15,255,0,1
+2026-09-28,Puerco con calabacitas,12,15,180,0,1
+2026-09-28,Refresco,11,20,220,0,1
+2026-09-28,Res a la mexicana,12,15,180,0,1
+2026-09-29,Agua del día,21,15,315,0,1
+2026-09-29,Chicharrón,15,15,225,0,1
+2026-09-29,Frijoles,5,15,75,0,1
+2026-09-29,Huevo con jamón,8,15,120,0,1
+2026-09-29,Lengua,15,15,225,0,1
+2026-09-29,Machaca,14,15,210,0,1
+2026-09-29,Pepena,6,15,90,0,1
+2026-09-29,Pollo con crema,25,15,375,0,1
+2026-09-29,Pollo en salsa verde,11,15,165,0,1
+2026-09-29,Puerco con calabacitas,0,15,0,0,0
+2026-09-29,Refresco,4,20,80,0,1
+2026-09-29,Res a la mexicana,8,15,120,0,1
+2026-09-30,Agua del día,11,15,165,1,1
+2026-09-30,Chicharrón,7,15,105,1,1
+2026-09-30,Frijoles,9,15,135,1,1
+2026-09-30,Huevo con jamón,6,15,90,1,1
+2026-09-30,Lengua,2,15,30,1,1
+2026-09-30,Machaca,14,15,210,1,1
+2026-09-30,Pepena,3,15,45,1,1
+2026-09-30,Pollo con crema,1,15,15,1,1
+2026-09-30,Pollo en salsa verde,5,15,75,1,1
+2026-09-30,Puerco con calabacitas,2,15,30,1,1
+2026-09-30,Refresco,12,20,240,1,1
+2026-09-30,Res a la mexicana,7,15,105,1,1
+2026-10-01,Agua del día,9,15,135,1,1
+2026-10-01,Chicharrón,16,15,240,1,1
+2026-10-01,Frijoles,6,15,90,1,1
+2026-10-01,Huevo con jamón,17,15,255,1,1
+2026-10-01,Lengua,4,15,60,1,1
+2026-10-01,Machaca,0,15,0,1,1
+2026-10-01,Pepena,2,15,30,1,1
+2026-10-01,Pollo con crema,7,15,105,1,1
+2026-10-01,Pollo en salsa verde,7,15,105,1,1
+2026-10-01,Puerco con calabacitas,4,15,60,1,1
+2026-10-01,Refresco,19,20,380,1,1
+2026-10-01,Res a la mexicana,2,15,30,1,1
+2026-10-02,Agua del día,17,15,255,0,1
+2026-10-02,Chicharrón,8,15,120,0,1
+2026-10-02,Frijoles,11,15,165,0,1
+2026-10-02,Huevo con jamón,15,15,225,0,1
+2026-10-02,Lengua,2,15,30,0,1
+2026-10-02,Machaca,7,15,105,0,1
+2026-10-02,Pepena,14,15,210,0,1
+2026-10-02,Pollo con crema,26,15,390,0,1
+2026-10-02,Pollo en salsa verde,25,15,375,0,1
+2026-10-02,Puerco con calabacitas,3,15,45,0,1
+2026-10-02,Refresco,8,20,160,0,1
+2026-10-02,Res a la mexicana,2,15,30,0,1
+2026-10-03,Agua del día,12,15,180,0,1
+2026-10-03,Chicharrón,6,15,90,0,1
+2026-10-03,Frijoles,6,15,90,0,1
+2026-10-03,Huevo con jamón,9,15,135,0,1
+2026-10-03,Lengua,1,15,15,0,1
+2026-10-03,Machaca,2,15,30,0,1
+2026-10-03,Pepena,2,15,30,0,1
+2026-10-03,Pollo con crema,6,15,90,0,1
+2026-10-03,Pollo en salsa verde,6,15,90,0,1
+2026-10-03,Puerco con calabacitas,9,15,135,0,1
+2026-10-03,Refresco,8,20,160,0,1
+2026-10-03,Res a la mexicana,10,15,150,0,1
+2026-10-04,Agua del día,13,15,195,0,1
+2026-10-04,Chicharrón,6,15,90,0,1
+2026-10-04,Frijoles,5,15,75,0,1
+2026-10-04,Huevo con jamón,12,15,180,0,1
+2026-10-04,Lengua,3,15,45,0,1
+2026-10-04,Machaca,5,15,75,0,1
+2026-10-04,Pepena,9,15,135,0,1
+2026-10-04,Pollo con crema,14,15,210,0,1
+2026-10-04,Pollo en salsa verde,7,15,105,0,1
+2026-10-04,Puerco con calabacitas,7,15,105,0,1
+2026-10-04,Refresco,6,20,120,0,1
+2026-10-04,Res a la mexicana,2,15,30,0,1
+2026-10-05,Agua del día,9,15,135,0,1
+2026-10-05,Chicharrón,6,15,90,0,1
+2026-10-05,Frijoles,16,15,240,0,1
+2026-10-05,Huevo con jamón,9,15,135,0,1
+2026-10-05,Lengua,7,15,105,0,1
+2026-10-05,Machaca,4,15,60,0,1
+2026-10-05,Pepena,1,15,15,0,1
+2026-10-05,Pollo con crema,12,15,180,0,1
+2026-10-05,Pollo en salsa verde,5,15,75,0,1
+2026-10-05,Puerco con calabacitas,8,15,120,0,1
+2026-10-05,Refresco,11,20,220,0,1
+2026-10-05,Res a la mexicana,10,15,150,0,1
+2026-10-06,Agua del día,21,15,315,0,1
+2026-10-06,Chicharrón,22,15,330,0,1
+2026-10-06,Frijoles,19,15,285,0,1
+2026-10-06,Huevo con jamón,9,15,135,0,1
+2026-10-06,Lengua,3,15,45,0,1
+2026-10-06,Machaca,12,15,180,0,1
+2026-10-06,Pepena,3,15,45,0,1
+2026-10-06,Pollo con crema,4,15,60,0,1
+2026-10-06,Pollo en salsa verde,12,15,180,0,1
+2026-10-06,Puerco con calabacitas,14,15,210,0,1
+2026-10-06,Refresco,5,20,100,0,1
+2026-10-06,Res a la mexicana,12,15,180,0,1
+2026-10-07,Agua del día,17,15,255,0,1
+2026-10-07,Chicharrón,11,15,165,0,1
+2026-10-07,Frijoles,6,15,90,0,1
+2026-10-07,Huevo con jamón,12,15,180,0,1
+2026-10-07,Lengua,5,15,75,0,1
+2026-10-07,Machaca,2,15,30,0,1
+2026-10-07,Pepena,9,15,135,0,1
+2026-10-07,Pollo con crema,8,15,120,0,1
+2026-10-07,Pollo en salsa verde,6,15,90,0,1
+2026-10-07,Puerco con calabacitas,4,15,60,0,1
+2026-10-07,Refresco,15,20,300,0,1
+2026-10-07,Res a la mexicana,3,15,45,0,1
+2026-10-08,Agua del día,16,15,240,0,1
+2026-10-08,Chicharrón,2,15,30,0,1
+2026-10-08,Frijoles,13,15,195,0,1
+2026-10-08,Huevo con jamón,11,15,165,0,1
+2026-10-08,Lengua,13,15,195,0,1
+2026-10-08,Machaca,6,15,90,0,1
+2026-10-08,Pepena,1,15,15,0,1
+2026-10-08,Pollo con crema,8,15,120,0,1
+2026-10-08,Pollo en salsa verde,25,15,375,0,1
+2026-10-08,Puerco con calabacitas,7,15,105,0,1
+2026-10-08,Refresco,17,20,340,0,1
+2026-10-08,Res a la mexicana,2,15,30,0,1
+2026-10-09,Agua del día,5,15,75,0,1
+2026-10-09,Chicharrón,32,15,480,0,1
+2026-10-09,Frijoles,10,15,150,0,1
+2026-10-09,Huevo con jamón,18,15,270,0,1
+2026-10-09,Lengua,5,15,75,0,1
+2026-10-09,Machaca,7,15,105,0,1
+2026-10-09,Pepena,2,15,30,0,1
+2026-10-09,Pollo con crema,15,15,225,0,1
+2026-10-09,Pollo en salsa verde,15,15,225,0,1
+2026-10-09,Puerco con calabacitas,3,15,45,0,1
+2026-10-09,Refresco,7,20,140,0,1
+2026-10-09,Res a la mexicana,4,15,60,0,1
+2026-10-10,Agua del día,5,15,75,0,1
+2026-10-10,Chicharrón,7,15,105,0,1
+2026-10-10,Frijoles,12,15,180,0,1
+2026-10-10,Huevo con jamón,13,15,195,0,1
+2026-10-10,Lengua,6,15,90,0,1
+2026-10-10,Machaca,4,15,60,0,1
+2026-10-10,Pepena,3,15,45,0,1
+2026-10-10,Pollo con crema,10,15,150,0,1
+2026-10-10,Pollo en salsa verde,7,15,105,0,1
+2026-10-10,Puerco con calabacitas,0,15,0,0,0
+2026-10-10,Refresco,13,20,260,0,1
+2026-10-10,Res a la mexicana,12,15,180,0,1
+2026-10-11,Agua del día,7,15,105,0,1
+2026-10-11,Chicharrón,10,15,150,0,1
+2026-10-11,Frijoles,8,15,120,0,1
+2026-10-11,Huevo con jamón,18,15,270,0,1
+2026-10-11,Lengua,2,15,30,0,1
+2026-10-11,Machaca,1,15,15,0,1
+2026-10-11,Pepena,4,15,60,0,1
+2026-10-11,Pollo con crema,7,15,105,0,1
+2026-10-11,Pollo en salsa verde,9,15,135,0,1
+2026-10-11,Puerco con calabacitas,10,15,150,0,1
+2026-10-11,Refresco,4,20,80,0,1
+2026-10-11,Res a la mexicana,7,15,105,0,1
+2026-10-12,Agua del día,20,15,300,0,1
+2026-10-12,Chicharrón,12,15,180,0,1
+2026-10-12,Frijoles,7,15,105,0,1
+2026-10-12,Huevo con jamón,9,15,135,0,1
+2026-10-12,Lengua,1,15,15,0,1
+2026-10-12,Machaca,6,15,90,0,1
+2026-10-12,Pepena,8,15,120,0,1
+2026-10-12,Pollo con crema,9,15,135,0,1
+2026-10-12,Pollo en salsa verde,7,15,105,0,1
+2026-10-12,Puerco con calabacitas,11,15,165,0,1
+2026-10-12,Refresco,15,20,300,0,1
+2026-10-12,Res a la mexicana,7,15,105,0,1
+2026-10-13,Agua del día,11,15,165,1,1
+2026-10-13,Chicharrón,10,15,150,1,1
+2026-10-13,Frijoles,14,15,210,1,1
+2026-10-13,Huevo con jamón,16,15,240,1,1
+2026-10-13,Lengua,6,15,90,1,1
+2026-10-13,Machaca,4,15,60,1,1
+2026-10-13,Pepena,2,15,30,1,1
+2026-10-13,Pollo con crema,10,15,150,1,1
+2026-10-13,Pollo en salsa verde,4,15,60,1,1
+2026-10-13,Puerco con calabacitas,5,15,75,1,1
+2026-10-13,Refresco,24,20,480,1,1
+2026-10-13,Res a la mexicana,3,15,45,1,1
+2026-10-14,Agua del día,5,15,75,0,1
+2026-10-14,Chicharrón,15,15,225,0,1
+2026-10-14,Frijoles,8,15,120,0,1
+2026-10-14,Huevo con jamón,7,15,105,0,1
+2026-10-14,Lengua,0,15,0,0,1
+2026-10-14,Machaca,6,15,90,0,1
+2026-10-14,Pepena,4,15,60,0,1
+2026-10-14,Pollo con crema,3,15,45,0,1
+2026-10-14,Pollo en salsa verde,3,15,45,0,1
+2026-10-14,Puerco con calabacitas,0,15,0,0,0
+2026-10-14,Refresco,5,20,100,0,1
+2026-10-14,Res a la mexicana,13,15,195,0,1
+2026-10-15,Agua del día,21,15,315,1,1
+2026-10-15,Chicharrón,13,15,195,1,1
+2026-10-15,Frijoles,8,15,120,1,1
+2026-10-15,Huevo con jamón,10,15,150,1,1
+2026-10-15,Lengua,9,15,135,1,1
+2026-10-15,Machaca,5,15,75,1,1
+2026-10-15,Pepena,3,15,45,1,1
+2026-10-15,Pollo con crema,1,15,15,1,1
+2026-10-15,Pollo en salsa verde,7,15,105,1,1
+2026-10-15,Puerco con calabacitas,6,15,90,1,1
+2026-10-15,Refresco,7,20,140,1,1
+2026-10-15,Res a la mexicana,4,15,60,1,1
+2026-10-16,Agua del día,8,15,120,0,1
+2026-10-16,Chicharrón,12,15,180,0,1
+2026-10-16,Frijoles,12,15,180,0,1
+2026-10-16,Huevo con jamón,13,15,195,0,1
+2026-10-16,Lengua,5,15,75,0,1
+2026-10-16,Machaca,17,15,255,0,1
+2026-10-16,Pepena,7,15,105,0,1
+2026-10-16,Pollo con crema,27,15,405,0,1
+2026-10-16,Pollo en salsa verde,11,15,165,0,1
+2026-10-16,Puerco con calabacitas,12,15,180,0,1
+2026-10-16,Refresco,5,20,100,0,1
+2026-10-16,Res a la mexicana,20,15,300,0,1
+2026-10-17,Agua del día,5,15,75,0,1
+2026-10-17,Chicharrón,15,15,225,0,1
+2026-10-17,Frijoles,13,15,195,0,1
+2026-10-17,Huevo con jamón,2,15,30,0,1
+2026-10-17,Lengua,2,15,30,0,1
+2026-10-17,Machaca,4,15,60,0,1
+2026-10-17,Pepena,4,15,60,0,1
+2026-10-17,Pollo con crema,7,15,105,0,1
+2026-10-17,Pollo en salsa verde,9,15,135,0,1
+2026-10-17,Puerco con calabacitas,9,15,135,0,1
+2026-10-17,Refresco,10,20,200,0,1
+2026-10-17,Res a la mexicana,8,15,120,0,1
+2026-10-18,Agua del día,16,15,240,1,1
+2026-10-18,Chicharrón,10,15,150,1,1
+2026-10-18,Frijoles,1,15,15,1,1
+2026-10-18,Huevo con jamón,9,15,135,1,1
+2026-10-18,Lengua,6,15,90,1,1
+2026-10-18,Machaca,5,15,75,1,1
+2026-10-18,Pepena,3,15,45,1,1
+2026-10-18,Pollo con crema,1,15,15,1,1
+2026-10-18,Pollo en salsa verde,1,15,15,1,1
+2026-10-18,Puerco con calabacitas,1,15,15,1,1
+2026-10-18,Refresco,6,20,120,1,1
+2026-10-18,Res a la mexicana,5,15,75,1,1
+2026-10-19,Agua del día,9,15,135,0,1
+2026-10-19,Chicharrón,14,15,210,0,1
+2026-10-19,Frijoles,9,15,135,0,1
+2026-10-19,Huevo con jamón,10,15,150,0,1
+2026-10-19,Lengua,0,15,0,0,1
+2026-10-19,Machaca,6,15,90,0,1
+2026-10-19,Pepena,7,15,105,0,1
+2026-10-19,Pollo con crema,10,15,150,0,1
+2026-10-19,Pollo en salsa verde,0,15,0,0,1
+2026-10-19,Puerco con calabacitas,7,15,105,0,1
+2026-10-19,Refresco,10,20,200,0,1
+2026-10-19,Res a la mexicana,8,15,120,0,1
+2026-10-20,Agua del día,10,15,150,0,1
+2026-10-20,Chicharrón,27,15,405,0,1
+2026-10-20,Frijoles,7,15,105,0,1
+2026-10-20,Huevo con jamón,12,15,180,0,1
+2026-10-20,Lengua,6,15,90,0,1
+2026-10-20,Machaca,10,15,150,0,1
+2026-10-20,Pepena,13,15,195,0,1
+2026-10-20,Pollo con crema,8,15,120,0,1
+2026-10-20,Pollo en salsa verde,17,15,255,0,1
+2026-10-20,Puerco con calabacitas,13,15,195,0,1
+2026-10-20,Refresco,14,20,280,0,1
+2026-10-20,Res a la mexicana,5,15,75,0,1
+2026-10-21,Agua del día,20,15,300,0,1
+2026-10-21,Chicharrón,9,15,135,0,1
+2026-10-21,Frijoles,0,15,0,0,0
+2026-10-21,Huevo con jamón,14,15,210,0,1
+2026-10-21,Lengua,5,15,75,0,1
+2026-10-21,Machaca,11,15,165,0,1
+2026-10-21,Pepena,6,15,90,0,1
+2026-10-21,Pollo con crema,6,15,90,0,1
+2026-10-21,Pollo en salsa verde,13,15,195,0,1
+2026-10-21,Puerco con calabacitas,13,15,195,0,1
+2026-10-21,Refresco,6,20,120,0,1
+2026-10-21,Res a la mexicana,9,15,135,0,1
+2026-10-22,Agua del día,20,15,300,0,1
+2026-10-22,Chicharrón,16,15,240,0,1
+2026-10-22,Frijoles,20,15,300,0,1
+2026-10-22,Huevo con jamón,13,15,195,0,1
+2026-10-22,Lengua,5,15,75,0,1
+2026-10-22,Machaca,1,15,15,0,1
+2026-10-22,Pepena,6,15,90,0,1
+2026-10-22,Pollo con crema,12,15,180,0,1
+2026-10-22,Pollo en salsa verde,13,15,195,0,1
+2026-10-22,Puerco con calabacitas,7,15,105,0,1
+2026-10-22,Refresco,9,20,180,0,1
+2026-10-22,Res a la mexicana,3,15,45,0,1
+2026-10-23,Agua del día,19,15,285,0,1
+2026-10-23,Chicharrón,10,15,150,0,1
+2026-10-23,Frijoles,9,15,135,0,1
+2026-10-23,Huevo con jamón,14,15,210,0,1
+2026-10-23,Lengua,7,15,105,0,1
+2026-10-23,Machaca,10,15,150,0,1
+2026-10-23,Pepena,3,15,45,0,1
+2026-10-23,Pollo con crema,13,15,195,0,1
+2026-10-23,Pollo en salsa verde,13,15,195,0,1
+2026-10-23,Puerco con calabacitas,9,15,135,0,1
+2026-10-23,Refresco,10,20,200,0,1
+2026-10-23,Res a la mexicana,8,15,120,0,1
+2026-10-24,Agua del día,12,15,180,0,1
+2026-10-24,Chicharrón,17,15,255,0,1
+2026-10-24,Frijoles,6,15,90,0,1
+2026-10-24,Huevo con jamón,0,15,0,0,0
+2026-10-24,Lengua,4,15,60,0,1
+2026-10-24,Machaca,2,15,30,0,1
+2026-10-24,Pepena,7,15,105,0,1
+2026-10-24,Pollo con crema,11,15,165,0,1
+2026-10-24,Pollo en salsa verde,8,15,120,0,1
+2026-10-24,Puerco con calabacitas,4,15,60,0,1
+2026-10-24,Refresco,15,20,300,0,1
+2026-10-24,Res a la mexicana,5,15,75,0,1
+2026-10-25,Agua del día,5,15,75,0,1
+2026-10-25,Chicharrón,6,15,90,0,1
+2026-10-25,Frijoles,11,15,165,0,1
+2026-10-25,Huevo con jamón,5,15,75,0,1
+2026-10-25,Lengua,5,15,75,0,1
+2026-10-25,Machaca,3,15,45,0,1
+2026-10-25,Pepena,8,15,120,0,1
+2026-10-25,Pollo con crema,8,15,120,0,1
+2026-10-25,Pollo en salsa verde,8,15,120,0,1
+2026-10-25,Puerco con calabacitas,4,15,60,0,1
+2026-10-25,Refresco,17,20,340,0,1
+2026-10-25,Res a la mexicana,3,15,45,0,1
+2026-10-26,Agua del día,7,15,105,0,1
+2026-10-26,Chicharrón,9,15,135,0,1
+2026-10-26,Frijoles,7,15,105,0,1
+2026-10-26,Huevo con jamón,7,15,105,0,1
+2026-10-26,Lengua,3,15,45,0,1
+2026-10-26,Machaca,8,15,120,0,1
+2026-10-26,Pepena,2,15,30,0,1
+2026-10-26,Pollo con crema,14,15,210,0,1
+2026-10-26,Pollo en salsa verde,8,15,120,0,1
+2026-10-26,Puerco con calabacitas,3,15,45,0,1
+2026-10-26,Refresco,9,20,180,0,1
+2026-10-26,Res a la mexicana,1,15,15,0,1
