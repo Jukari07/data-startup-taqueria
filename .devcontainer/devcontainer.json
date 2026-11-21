@@ -1,0 +1,37 @@
+{
+  // ── Tacos Las Cazuelitas — Dev Container ──────────────────
+  // Entorno de desarrollo reproducible basado en Python 3.11.
+  // Al abrir en VS Code con la extensión Dev Containers se
+  // construye automáticamente el contenedor y se instalan
+  // todas las dependencias.
+  "name": "taqueria-devcontainer",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11",
+
+  // Instala las tres capas de dependencias al crear el contenedor
+  "postCreateCommand": "pip install --upgrade pip && pip install -r requirements.txt -r requirements-eda.txt -r requirements-pipeline.txt",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        // Soporte de lenguaje Python
+        "ms-python.python",
+        // IntelliSense avanzado con Pylance
+        "ms-python.vscode-pylance",
+        // Gestión de contenedores Docker desde la barra lateral
+        "ms-azuretools.vscode-docker"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python",
+        "editor.formatOnSave": true,
+        "[python]": {
+          "editor.defaultFormatter": "ms-python.python"
+        }
+      }
+    }
+  },
+
+  // Reenvía los puertos de los servicios locales al host
+  "forwardPorts": [8000, 8001, 8501, 5432, 9000, 9001, 5672, 15672],
+
+  "remoteUser": "vscode"
+}

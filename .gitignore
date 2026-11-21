@@ -1,4 +1,43 @@
-.ipynb_checkpoints/
-__pycache__/
-.venv/
+# =============================================================
+# .gitignore — Tacos Las Cazuelitas
+# Excluye secretos, artefactos de build y archivos generados
+# =============================================================
+
+# ── Secretos y configuración local ──────────────────────────
 .env
+
+# ── Terraform ───────────────────────────────────────────────
+*.tfstate
+*.tfstate.backup
+/infra/terraform/.terraform
+
+# ── Datos CSV (excepto muestras de referencia) ───────────────
+*.csv
+!data/sample/*.csv
+
+# ── Python ───────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+.mypy_cache/
+.pytest_cache/
+
+# ── Modelos ML (binarios sin versionar) ─────────────────────
+models/*.pkl
+
+# ── Node / frontend ──────────────────────────────────────────
+node_modules/
+
+# ── macOS ────────────────────────────────────────────────────
+.DS_Store
+
+# ── IDEs ─────────────────────────────────────────────────────
+.idea/
+.vscode/settings.json
+*.swp

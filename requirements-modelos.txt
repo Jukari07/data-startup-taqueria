@@ -1,0 +1,19 @@
+# =============================================================
+# requirements-modelos.txt — Servicio de modelos predictivos
+# Instalar: pip install -r requirements-modelos.txt
+# Se usa en services/modelos para pronóstico de demanda.
+# =============================================================
+
+# ── Manipulación de datos ─────────────────────────────────────
+pandas==2.2.3
+numpy==1.26.4
+
+# ── Machine Learning ──────────────────────────────────────────
+scikit-learn==1.5.2
+statsmodels==0.14.4
+pmdarima==2.0.4
+joblib==1.4.2
+
+# ── API REST para servir predicciones ─────────────────────────
+fastapi==0.115.6
+uvicorn[standard]==0.32.1

@@ -1,0 +1,14 @@
+{
+  "n_registros_raw": 20332,
+  "n_pedidos_unicos_raw": 8895,
+  "fechas_invalidas_eliminadas": 0,
+  "paso1_duplicados_eliminados": 459,
+  "paso2_nulos_imputados": 400,
+  "paso3_nombres_corregidos": 931,
+  "paso4_negativos_corregidos": 197,
+  "paso4_totales_recalculados": 832,
+  "paso5_outliers_capped": 808,
+  "n_registros_clean": 19873,
+  "n_pedidos_unicos_clean": 8895,
+  "reduccion_total": 459
+}
