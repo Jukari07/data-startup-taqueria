@@ -3,6 +3,13 @@
 # Orquesta todos los servicios del proyecto en local.
 # Uso: docker-compose up --build
 # Requiere: archivo .env configurado (cp .env.example .env)
+#
+# IMPORTANTE — Variables de red vs. variables locales:
+#   El archivo .env.example usa localhost para desarrollo sin Docker.
+#   Las variables de entorno definidas aquí dentro de cada servicio
+#   SOBREESCRIBEN las del .env, apuntando a los nombres de servicio
+#   internos de Docker (minio, rabbitmq, postgres) que sólo existen
+#   dentro de la red docker-compose.
 # =============================================================
 
 services:
@@ -13,12 +20,11 @@ services:
     restart: unless-stopped
     env_file: .env
     environment:
-      POSTGRES_DB: ${POSTGRES_DB:?Configura POSTGRES_DB en .env}
-      POSTGRES_USER: ${POSTGRES_USER:?Configura POSTGRES_USER en .env}
+      POSTGRES_DB:       ${POSTGRES_DB:?Configura POSTGRES_DB en .env}
+      POSTGRES_USER:     ${POSTGRES_USER:?Configura POSTGRES_USER en .env}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Configura POSTGRES_PASSWORD en .env}
     volumes:
       - postgres_data:/var/lib/postgresql/data
-      # Ejecuta las migraciones al iniciar el contenedor por primera vez
       - ./db/migrations:/docker-entrypoint-initdb.d:ro
     ports:
       - "5432:5432"
@@ -35,7 +41,7 @@ services:
     restart: unless-stopped
     env_file: .env
     environment:
-      MINIO_ROOT_USER: ${MINIO_ACCESS_KEY:?Configura MINIO_ACCESS_KEY en .env}
+      MINIO_ROOT_USER:     ${MINIO_ACCESS_KEY:?Configura MINIO_ACCESS_KEY en .env}
       MINIO_ROOT_PASSWORD: ${MINIO_SECRET_KEY:?Configura MINIO_SECRET_KEY en .env}
     command: server /data --console-address ":9001"
     volumes:
@@ -74,6 +80,14 @@ services:
       dockerfile: services/pedidos/Dockerfile
     restart: unless-stopped
     env_file: .env
+    # Sobrescribe localhost por nombres de servicio Docker internos:
+    environment:
+      POSTGRES_HOST: postgres
+      POSTGRES_PORT: "5432"
+      MINIO_ENDPOINT: http://minio:9000
+      MINIO_ACCESS_KEY: ${MINIO_ACCESS_KEY}
+      MINIO_SECRET_KEY: ${MINIO_SECRET_KEY}
+      RABBITMQ_URL: amqp://guest:guest@rabbitmq:5672/
     ports:
       - "8000:8000"
     depends_on:
@@ -91,6 +105,14 @@ services:
       dockerfile: services/worker/Dockerfile
     restart: unless-stopped
     env_file: .env
+    # Sobrescribe localhost por nombres de servicio Docker internos:
+    environment:
+      POSTGRES_HOST: postgres
+      POSTGRES_PORT: "5432"
+      MINIO_ENDPOINT: http://minio:9000
+      MINIO_ACCESS_KEY: ${MINIO_ACCESS_KEY}
+      MINIO_SECRET_KEY: ${MINIO_SECRET_KEY}
+      RABBITMQ_URL: amqp://guest:guest@rabbitmq:5672/
     depends_on:
       postgres:
         condition: service_healthy
@@ -106,6 +128,9 @@ services:
       dockerfile: services/modelos/Dockerfile
     restart: unless-stopped
     env_file: .env
+    environment:
+      POSTGRES_HOST: postgres
+      POSTGRES_PORT: "5432"
     ports:
       - "8001:8001"
     depends_on:
@@ -119,6 +144,13 @@ services:
       dockerfile: services/tablero/Dockerfile
     restart: unless-stopped
     env_file: .env
+    # Sobrescribe localhost por nombres de servicio Docker internos:
+    environment:
+      POSTGRES_HOST: postgres
+      POSTGRES_PORT: "5432"
+      MINIO_ENDPOINT: http://minio:9000
+      MINIO_ACCESS_KEY: ${MINIO_ACCESS_KEY}
+      MINIO_SECRET_KEY: ${MINIO_SECRET_KEY}
     ports:
       - "8501:8501"
     depends_on:

@@ -1,7 +1,7 @@
 # E0 · Propuesta de Plataforma de Pedidos y Analítica
 ## Tacos "Las Cazuelitas" · Tecomán, Colima
 
-**Equipo:** [Jukari Molinero De la Cruz] (Cloud Lead) · (Data Lead)
+**Equipo:** Jukari Molinero De la Cruz (Cloud Lead y Data Lead; equipo individual)
 **Materias:** Cómputo en la Nube (IAD-2408) × Analítica de Datos (IAD-2403)
 **Fecha de entrega:** 16 de octubre de 2026 · **Proveedor de nube elegido:** AWS
 
@@ -32,7 +32,7 @@
 
 ## 2. Entrevista con la dueña
 
-**Entrevistada:** Doña Rocío de la Cruz · **Fecha:** [10 de octubre del 2026] · **Duración:** [mínimo 15 min]
+**Entrevistada:** Doña Rocío de la Cruz · **Fecha:** [10 de octubre del 2026] · **Duración:** [15 minutos]
 
 | # | Pregunta | Respuesta |
 |---|---|---|
@@ -109,11 +109,11 @@
 
 ## 6. Arranque técnico
 
-- [x] Cuenta de AWS creada, con MFA activo en la cuenta raíz.
-- [ ] Un usuario IAM por integrante; la cuenta raíz no se usa para operar.
-- [x] Alerta de presupuesto activa, con aviso por correo.
-- [x] Repositorio en GitHub con ambos integrantes como colaboradores y commits de los dos.
-- [ ] Estructura inicial del repositorio, `.env.example` y `.gitignore` que excluye `.env`, `*.tfstate` y los CSV completos.
+- [x] Cuenta de AWS creada, con MFA activo en la cuenta raíz
+- [ ] Un usuario IAM por integrante; la cuenta raíz no se usa para operar
+- [x] Alerta de presupuesto activa, con aviso por correo
+- [x] Repositorio en GitHub con commits de la integrante
+- [ ] Estructura inicial del repositorio, `.env.example` y `.gitignore` que excluye `.env`, `*.tfstate` y los CSV completos
 
 ![Alerta de presupuesto](e0-alerta-presupuesto.png)
 ![MFA](evidencia/e0-mfa-cuenta-raiz.png)
@@ -123,12 +123,12 @@
 
 ## 7. Modelo de ingresos
 
-**Suscripción mensual (SaaS):** $1,000 MXN por negocio al mes, precio que la dueña dijo que pagaría en la entrevista.
+**Suscripción mensual (SaaS):** $1,000 MXN por negocio al mes, precio que la dueña dijo que pagaría en la entrevista
 
 **Ejemplo conservador (a validar en E5 con la calculadora de AWS):**
-- 10 negocios × $1,000 = $10,000 MXN al mes.
-- Costo de nube estimado: entre $150 y $300 MXN al mes para 10 negocios (supuesto por validar).
-- Margen por cliente = Precio mensual − (Costo de nube mensual ÷ Número de clientes).
+- 10 negocios × $1,000 = $10,000 MXN al mes
+- Costo de nube estimado: entre $150 y $300 MXN al mes para 10 negocios (supuesto por validar)
+- Margen por cliente = Precio mensual − (Costo de nube mensual ÷ Número de clientes)
 
 ---
 

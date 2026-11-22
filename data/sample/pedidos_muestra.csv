@@ -1,101 +1,101 @@
 pedido_id,fecha_hora,cliente_id,tipo_entrega,producto,categoria,cantidad,precio_unitario,salsa,total,estado
-4166381a-7470-4176-aa4b-7db5b67bfe91,2024-12-24 10:33:59,cliente_anonimizado,aqui,Pepena,guisado,1.0,20.0,roja,20.0,entregado
-ecaeb074-5474-42fb-afa2-c3b3a1bf00fc,2024-07-19 09:52:30,cliente_anonimizado,aqui,Coca-Cola,bebida,2.0,25.0,sin_salsa,50.0,entregado
-b8a5968d-9138-4c39-aa00-99970aa4b80a,2024-08-30 10:59:34,cliente_anonimizado,domicilio,Carne de puerco con calabacita,guisado,1.0,20.0,verde,20.0,entregado
-cd9c2e8f-04d7-4c8e-bcda-1045883cd14e,2024-11-15 09:14:56,cliente_anonimizado,domicilio,Pepena,guisado,1.0,20.0,verde,20.0,cancelado
-68e489bf-6a6e-4a68-bed9-567f0c0fb1c1,2024-03-26 09:36:08,cliente_anonimizado,aqui,Chicharrón,guisado,1.0,20.0,roja,20.0,entregado
-8f79bd8b-b663-4624-93f4-25f5290d6f51,2024-08-24 08:27:34,cliente_anonimizado,domicilio,Coca-Cola,bebida,1.0,25.0,sin_salsa,25.0,entregado
-794f7cb8-244d-48c6-ab34-d4e4465a4aa0,2024-07-17 07:51:19,cliente_anonimizado,aqui,Chicharrón,guisado,3.0,20.0,roja,60.0,entregado
-fdce9ecf-010f-4505-9503-e90d0da250cb,2024-03-02 09:09:16,cliente_anonimizado,llevar,Chicharrón,guisado,2.0,20.0,verde,40.0,entregado
-3a748596-5b38-4e48-bfb4-8d9da50ee2e1,2024-05-16 10:20:43,cliente_anonimizado,domicilio,Carne de puerco con calabacita,guisado,2.0,20.0,verde,40.0,entregado
-85b164bd-c65a-4b46-8fb4-297fb0f0737d,2024-04-02 11:35:54,cliente_anonimizado,aqui,Squirt,bebida,3.0,25.0,sin_salsa,75.0,entregado
-cecedd10-a838-49b5-90c3-2eb254566368,2024-07-23 09:10:30,cliente_anonimizado,domicilio,Chicharrón,guisado,1.0,20.0,roja,20.0,entregado
-9e3f7ebf-439d-4efb-ab2a-f16ccd3a2858,2024-10-12 10:10:42,cliente_anonimizado,domicilio,Manzanita Sidral,bebida,4.0,25.0,sin_salsa,100.0,entregado
-092bb24e-4596-46b6-a79d-24b370b4761e,2024-05-29 10:45:09,cliente_anonimizado,domicilio,Coca-Cola,bebida,3.0,25.0,sin_salsa,75.0,entregado
-284b511b-e165-413b-a186-d25d44a5439e,2024-10-02 08:15:45,cliente_anonimizado,domicilio,Lengua,guisado,5.0,20.0,verde,100.0,cancelado
-439768ac-da78-4f9a-85b1-0799ba57987c,2024-01-30 11:43:20,cliente_anonimizado,aqui,Coca-Cola,bebida,5.0,25.0,sin_salsa,125.0,entregado
-71b5eb09-8164-4b69-8e2a-455213d19826,2024-03-08 08:05:57,cliente_anonimizado,domicilio,Fanta de Naranja,bebida,1.0,25.0,sin_salsa,25.0,entregado
-3a2a59b3-7751-421e-9fd0-48b725893048,2024-11-22 10:08:50,cliente_anonimizado,llevar,Coca-Cola,bebida,2.0,25.0,sin_salsa,50.0,entregado
-54f270d4-92b8-4ba9-b31b-db019c7bcd03,2024-01-27 08:45:40,cliente_anonimizado,aqui,Frijoles,guisado,2.0,20.0,verde,40.0,entregado
-427a1823-9680-48fb-b96e-6617af7c70dc,2024-09-28 11:59:52,cliente_anonimizado,llevar,Pepena,guisado,1.0,20.0,roja,20.0,entregado
-a04c254c-af80-43b5-9739-be8be83794fb,2024-03-22 09:23:52,cliente_anonimizado,domicilio,Chicharrón,guisado,3.0,20.0,verde,60.0,entregado
-bbb5b944-6f5c-4ac6-9a83-692243b0bdc0,2024-08-20 08:23:59,cliente_anonimizado,domicilio,Chicharrón,guisado,5.0,20.0,roja,100.0,entregado
-97b5f755-a10f-4b11-b6cb-bfca7e5da982,2024-08-30 07:28:29,cliente_anonimizado,domicilio,Pepena,guisado,2.0,20.0,verde,40.0,entregado
-e8e0b3ce-3936-496f-8792-47861699d75c,2024-06-07 07:58:10,cliente_anonimizado,domicilio,Pepena,guisado,1.0,20.0,verde,20.0,entregado
-dd4658ac-9161-4216-b6ac-6bd56f9bb8c4,2024-04-16 07:21:26,cliente_anonimizado,aqui,Chicharrón,guisado,2.0,20.0,roja,40.0,entregado
-d2997914-fb4b-4872-9257-7a69d1ebd4f9,2024-07-02 11:59:35,cliente_anonimizado,aqui,Manzanita Sidral,bebida,,25.0,sin_salsa,24.66,entregado
-3361d5c3-38f8-457e-92ac-b92ddcdcc9dd,2024-01-02 08:34:29,cliente_anonimizado,aqui,Chicharrón,guisado,1.0,20.0,verde,20.0,entregado
-75967ff1-efb4-4813-9de7-d1b9849e1dea,2024-07-30 08:26:15,cliente_anonimizado,aqui,Coca-Cola,bebida,2.0,25.0,sin_salsa,50.0,entregado
-fc1d959b-d8da-434c-84b7-875a48904fc9,2024-08-06 09:49:10,cliente_anonimizado,domicilio,Lengua,guisado,1.0,20.0,roja,20.0,entregado
-a69e79fc-bf9d-43ab-b69e-1197bf89b07c,2024-11-30 07:44:58,cliente_anonimizado,domicilio,Rajas con crema y elote,guisado,2.0,20.0,verde,40.0,entregado
-6a4d7b9c-09ba-4fbd-9a7d-86c0193bda6c,2024-08-22 07:19:13,cliente_anonimizado,domicilio,Carne de puerco con calabacita,guisado,1.0,20.0,roja,20.0,cancelado
-37de0bc1-4fb5-4f86-8799-5528fddb65c8,2024-06-25 08:25:01,cliente_anonimizado,aqui,Squirt,bebida,3.0,25.0,sin_salsa,81.91,entregado
-fa583207-7130-44ec-a3ea-6633c911432d,2024-02-22 09:54:57,cliente_anonimizado,domicilio,Rajas con crema y elote,guisado,4.0,20.0,roja,80.0,entregado
-251b0788-e4c1-4e49-a868-4077f05a3f08,2024-04-19 09:37:54,cliente_anonimizado,aqui,Lengua,guisado,,20.0,roja,20.0,entregado
-3cadfd59-8365-4477-a960-bbb5d66d7319,2024-07-16 09:55:48,cliente_anonimizado,llevar,Carne de puerco con calabacita,guisado,3.0,20.0,verde,60.0,entregado
-6fafe620-9c60-4045-bbfb-bde904f2bd6f,2024-02-01 07:25:23,cliente_anonimizado,domicilio,Carne de res a la mexicana,guisado,1.0,20.0,verde,20.0,entregado
-5e90bd73-aa86-4f44-8f25-317293cac64d,2024-05-11 10:46:22,cliente_anonimizado,aqui,Pepena,guisado,5.0,20.0,verde,100.0,entregado
-b653b9d3-8856-4f47-9ea5-1bdaa7e22a34,2024-09-14 07:52:34,cliente_anonimizado,domicilio,Machaca,guisado,1.0,20.0,roja,20.0,cancelado
-ab59f733-9734-492c-a958-135724a70949,2024-06-13 09:35:06,cliente_anonimizado,domicilio,Pepena,guisado,2.0,20.0,verde,40.0,entregado
-d5e419a9-a638-4160-890e-3958ee9935b7,2024-09-20 09:19:16,cliente_anonimizado,domicilio,Lengua,guisado,2.0,20.0,roja,40.0,entregado
-27f48c2d-de21-4c8c-99f9-e61660d24d00,2024-05-04 08:47:21,cliente_anonimizado,aqui,Pepena,guisado,4.0,20.0,verde,80.0,entregado
-b5ecfed2-76ba-48e9-8104-fee705596cfd,2024-08-28 10:54:03,cliente_anonimizado,llevar,Squirt,bebida,2.0,25.0,sin_salsa,50.0,entregado
-ee5a301a-efcc-41a6-be37-d42f1bcb1991,2024-08-20 07:36:26,cliente_anonimizado,domicilio,Lengua,guisado,2.0,20.0,verde,40.0,entregado
-bf247b11-05c1-433b-ba90-bc0da4d5f989,2024-11-15 08:23:38,cliente_anonimizado,aqui,Pepena,guisado,3.0,20.0,roja,60.0,entregado
-d63dd855-75ee-4ac5-8e26-1c5a1029085c,2024-05-11 07:13:51,cliente_anonimizado,domicilio,Machaca,guisado,2.0,20.0,roja,40.0,entregado
-85f819ba-c63b-4f17-a565-75d034ec7689,2024-11-12 08:52:51,cliente_anonimizado,llevar,Squirt,bebida,4.0,25.0,sin_salsa,100.0,cancelado
-282f3333-f6c2-4107-b96d-8d64cbfcbadf,2024-04-16 09:47:24,cliente_anonimizado,aqui,Pepena,guisado,4.0,20.0,roja,80.0,entregado
-79c4f7f3-83c2-4ae4-a2c6-6ba04da7a4a6,2024-08-09 08:10:46,cliente_anonimizado,domicilio,Machaca,guisado,1.0,20.0,verde,20.0,entregado
-1a83aac6-f962-4e77-bd82-fe30f2cdcf85,2024-06-04 07:30:15,cliente_anonimizado,domicilio,Pepena,guisado,3.0,20.0,roja,60.0,cancelado
-b64e8ec7-98ff-4677-b0fd-1214c953b994,2024-07-24 07:50:30,cliente_anonimizado,aqui,Chicharrón,guisado,1.0,20.0,roja,20.0,entregado
-4eedd61f-333f-4319-80b5-a087772824b5,2024-06-06 11:58:44,cliente_anonimizado,domicilio,Squirt,bebida,2.0,25.0,sin_salsa,50.0,entregado
-b309a4c0-c5d6-4c53-a677-94c4d8ec123f,2024-05-28 07:48:22,cliente_anonimizado,domicilio,Fanta de Naranja,bebida,3.0,25.0,sin_salsa,75.0,entregado
-13588b22-4a00-4995-8a85-e2bb1da9ad32,2024-09-14 11:18:21,cliente_anonimizado,aqui,Rajas con Crema,guisado,2.0,20.0,verde,40.0,entregado
-ee1680d2-31f4-4f39-afbc-ffea6557add1,2024-11-12 09:49:06,cliente_anonimizado,llevar,Chicharrón,guisado,1.0,20.0,roja,20.0,entregado
-4efbab71-5848-4252-b007-6522b2439142,2024-08-02 08:41:56,cliente_anonimizado,llevar,Coca-Cola,bebida,1.0,25.0,sin_salsa,25.0,entregado
-aecd570f-9a18-42b4-b8de-daffdd3da7cc,2024-03-01 09:02:42,cliente_anonimizado,aqui,Lengua,guisado,3.0,20.0,verde,60.0,entregado
-6a01b609-5c31-41e0-bb8b-bbdac6891d15,2024-12-28 11:34:04,cliente_anonimizado,domicilio,Squirt,bebida,2.0,25.0,sin_salsa,50.0,entregado
-97dfc586-4559-4d15-825a-7a765225d58d,2024-08-01 09:41:34,cliente_anonimizado,domicilio,Squirt,bebida,2.0,25.0,sin_salsa,50.0,entregado
-b30b2142-75be-4db9-a848-60f30222b75f,2024-05-16 08:05:28,cliente_anonimizado,aqui,Squirt,bebida,2.0,25.0,sin_salsa,50.0,entregado
-f6c11b85-10b3-4bb8-9fea-f868bc43bc4b,2024-08-29 08:03:54,cliente_anonimizado,aqui,Lengua,guisado,3.0,20.0,roja,60.0,entregado
-3bd4e733-9ae8-4497-a4a5-bf63b16af98a,2024-08-16 08:48:59,cliente_anonimizado,domicilio,Pepena,guisado,5.0,20.0,roja,100.0,cancelado
-da460ae6-c5c8-456c-b101-1337c044cf50,2024-07-10 09:25:43,cliente_anonimizado,domicilio,Chicharrón,guisado,1.0,20.0,verde,20.0,entregado
-ab107b3a-0ac9-4478-86cf-685c429d7fc4,2024-08-15 11:29:02,cliente_anonimizado,aqui,Carne de res a la mexicana,guisado,5.0,20.0,verde,100.0,entregado
-528cefe1-e73f-4fd8-9826-d0cdda305f08,2024-11-27 07:09:52,cliente_anonimizado,aqui,Carne de res a la mexicana,guisado,2.0,20.0,verde,40.0,entregado
-26e87ef1-a7f6-4c43-b692-00e795147174,2024-09-21 11:24:57,cliente_anonimizado,domicilio,Squirt,bebida,1.0,25.0,sin_salsa,25.0,entregado
-b9e780e9-e412-420e-b055-f2d331b91ad3,2024-07-09 09:00:03,cliente_anonimizado,aqui,Agua fresca del día,bebida,1.0,25.0,sin_salsa,25.0,entregado
-21e4452d-460b-4cf4-818c-3d91e8fe005a,2024-10-16 09:22:59,cliente_anonimizado,llevar,Fanta de Naranja,bebida,2.0,25.0,sin_salsa,50.0,entregado
-fc16ef7e-1b7d-43e6-8c3a-da9d35f8aa00,2024-09-05 09:28:54,cliente_anonimizado,domicilio,Chicharrón,guisado,3.0,20.0,verde,60.0,entregado
-d1526158-bd44-4006-a306-877cb787eb75,2024-12-06 07:01:43,cliente_anonimizado,aqui,Agua fresca del día,bebida,2.0,25.0,sin_salsa,50.0,entregado
-a61eda2a-9b67-428f-8f1e-f24c882a3589,2024-11-13 11:53:43,cliente_anonimizado,aqui,Chicharrón,guisado,1.0,20.0,verde,20.0,entregado
-0011be43-502e-4839-ba4a-c86bc848e0e9,2024-07-05 09:38:26,cliente_anonimizado,domicilio,Squirt,bebida,3.0,25.0,sin_salsa,75.0,entregado
-afbc2c17-e028-4b2d-a6fd-a0acf7c5270f,2024-04-23 08:24:13,cliente_anonimizado,domicilio,Chicharrón,guisado,2.0,20.0,verde,40.0,entregado
-38cdf504-286e-42ee-a6f0-4d448297a13c,2024-05-25 09:25:24,cliente_anonimizado,domicilio,Lengua,guisado,3.0,20.0,verde,60.0,entregado
-2d88d79d-66e3-47c7-acab-ad2e06957279,2024-02-15 07:21:21,cliente_anonimizado,domicilio,Chicharrón,guisado,2.0,20.0,verde,40.0,entregado
-bcf9b1f1-5b6d-41f6-b1c3-654d739f5d7f,2024-06-22 07:36:13,cliente_anonimizado,domicilio,Machaca,guisado,2.0,20.0,roja,40.0,entregado
-e0eb0c55-c70a-4bf8-add7-f34725667bf1,2024-06-18 08:46:19,cliente_anonimizado,llevar,Frijoles,guisado,2.0,20.0,verde,29.31,entregado
-89799335-4c38-491a-b4c3-c01c3863938d,2024-09-10 10:56:59,cliente_anonimizado,aqui,Coca-Cola,bebida,3.0,25.0,sin_salsa,75.0,entregado
-a5d3c077-d4f7-4db0-8e28-90f254295b44,2024-09-03 08:31:21,cliente_anonimizado,domicilio,Lengua,guisado,1.0,20.0,verde,20.0,entregado
-58653d8c-cb28-4854-b8cb-e5f8013a9b67,2024-06-06 09:49:48,cliente_anonimizado,aqui,Chicharrón,guisado,2.0,20.0,verde,40.0,entregado
-a33ff43e-ec47-434c-956a-986dd3910477,2024-05-08 08:51:38,cliente_anonimizado,aqui,Carne de puerco con calabacita,guisado,2.0,20.0,verde,40.0,cancelado
-8eec9030-77ac-44d6-8f61-359d67d6b357,2024-09-06 11:20:52,cliente_anonimizado,domicilio,Agua fresca del día,bebida,2.0,25.0,sin_salsa,50.0,entregado
-ac57f7c2-36ca-4fce-be2e-6cdaaeaf3165,2024-07-17 07:57:09,cliente_anonimizado,domicilio,Lengua,guisado,2.0,20.0,roja,40.0,entregado
-0fe757a4-6361-402a-a54e-1e12e630dad7,2024-05-29 09:39:30,cliente_anonimizado,domicilio,Squirt,bebida,3.0,25.0,sin_salsa,75.0,entregado
-9fc669dd-b7b1-408b-92a1-a771d9277f23,2024-06-19 10:59:07,cliente_anonimizado,aqui,chicharron,guisado,2.0,20.0,roja,40.0,entregado
-739a910c-1c2e-414a-891a-983bfda57411,2024-05-25 10:04:51,cliente_anonimizado,domicilio,Rajas con crema y elote,guisado,2.0,20.0,roja,40.0,entregado
-eb9fbcd9-8b7f-4e68-8516-d3e42310d38e,2024-06-11 09:53:28,cliente_anonimizado,llevar,Chicharrón,guisado,1.0,20.0,roja,20.0,entregado
-7c61b520-1da7-431e-b530-16b689556b41,2024-04-25 09:34:15,cliente_anonimizado,domicilio,Lengua,guisado,3.0,20.0,verde,60.0,entregado
-32c99ee3-da7c-4702-a1ee-54b15dedc623,2024-06-25 08:42:18,cliente_anonimizado,domicilio,Carne de puerco con calabacita,guisado,3.0,20.0,verde,60.0,entregado
-dc31a6c2-ee96-4ba2-9a7c-ffa9e5140139,2024-09-06 07:09:50,cliente_anonimizado,llevar,Lengua,guisado,3.0,20.0,verde,60.0,entregado
-146c51a9-4de8-4228-8d69-15958b8f8295,2024-03-16 11:44:53,cliente_anonimizado,aqui,Machaca,guisado,1.0,20.0,verde,20.0,entregado
-715a3ac1-b7cf-4b0b-b71e-7c271c851d5a,2024-02-14 11:02:41,cliente_anonimizado,aqui,Pepena,guisado,3.0,20.0,roja,60.0,entregado
-9cc62848-94f7-48cb-9b18-d58c25849c9e,2024-06-08 08:25:28,cliente_anonimizado,domicilio,pepena,guisado,2.0,20.0,roja,40.0,entregado
-263e846d-a54e-40c6-9cab-160bb16941e2,2024-01-30 08:23:07,cliente_anonimizado,aqui,Carne de res a la mexicana,guisado,2.0,20.0,verde,40.0,entregado
-1c6dcdf7-429f-45cb-901d-5e1254d3c114,2024-09-19 10:13:01,cliente_anonimizado,aqui,Coca-Cola,bebida,,25.0,sin_salsa,50.0,entregado
-093cff31-947b-4a19-bd0e-ca280f84fb36,2024-08-16 09:50:39,cliente_anonimizado,aqui,Chicharrón,guisado,1.0,20.0,verde,20.0,entregado
-9bbe043e-7446-492e-a179-43a6dc4dcea6,2024-11-16 08:10:22,cliente_anonimizado,aqui,Chicharrón,guisado,2.0,20.0,roja,40.0,cancelado
-86af5bb5-8748-420d-b9a1-8287d90324e6,2024-06-01 07:27:04,cliente_anonimizado,aqui,Coca-Cola,bebida,5.0,25.0,sin_salsa,125.0,cancelado
-21152043-bd56-406d-8acc-926be7e1b919,2024-05-30 10:52:47,cliente_anonimizado,domicilio,Coca-Cola,bebida,,25.0,sin_salsa,25.0,entregado
-445a862f-63fe-4d5b-a56a-c5dbc24662c7,2024-08-21 10:19:37,cliente_anonimizado,domicilio,Carne de puerco con calabacita,guisado,2.0,20.0,verde,31.64,entregado
-b4b5be84-670f-419b-8fce-a5c311ef2f26,2024-08-16 09:13:23,cliente_anonimizado,domicilio,Chicharrón,guisado,1.0,20.0,verde,20.0,entregado
-4af6d0b8-4d03-4acd-af37-90c2dcf91887,2024-02-27 09:24:47,cliente_anonimizado,domicilio,Coca-Cola,bebida,1.0,25.0,sin_salsa,25.0,entregado
+8f416bc3-7ece-4cf0-8c5c-12073a4f60b9,2024-12-24 10:33:59,cliente_anonimizado,aqui,Pepena,guisado,1.0,20.0,roja,20.0,entregado
+9ea35bb3-bf53-41f4-90ae-cbb1108a6a16,2024-07-19 09:52:30,cliente_anonimizado,aqui,Coca-Cola,bebida,2.0,25.0,sin_salsa,50.0,entregado
+36e4f019-8f38-443a-851b-bc5af017a677,2024-08-30 10:59:34,cliente_anonimizado,domicilio,Carne de puerco con calabacita,guisado,1.0,20.0,verde,20.0,entregado
+e43d1b16-1a6f-4553-8877-363877940e83,2024-11-15 09:14:56,cliente_anonimizado,domicilio,Pepena,guisado,1.0,20.0,verde,20.0,cancelado
+67a54269-fb26-4272-9cc2-1af9510ea1f1,2024-03-26 09:36:08,cliente_anonimizado,aqui,Chicharrón,guisado,1.0,20.0,roja,20.0,entregado
+749bdc85-8e8e-4af2-8410-4a5414197a9b,2024-08-24 08:27:34,cliente_anonimizado,domicilio,Coca-Cola,bebida,1.0,25.0,sin_salsa,25.0,entregado
+0f55862c-997d-4e0b-b465-952c802419e4,2024-07-17 07:51:19,cliente_anonimizado,aqui,Chicharrón,guisado,3.0,20.0,roja,60.0,entregado
+9d31d912-104e-49dd-9c72-b3cff4de0fcf,2024-03-02 09:09:16,cliente_anonimizado,llevar,Chicharrón,guisado,2.0,20.0,verde,40.0,entregado
+850bed21-e183-4a3b-8c9c-420a6063086e,2024-05-16 10:20:43,cliente_anonimizado,domicilio,Carne de puerco con calabacita,guisado,2.0,20.0,verde,40.0,entregado
+094e4bec-023b-4e76-8e7b-dbb1c04f5fb5,2024-04-02 11:35:54,cliente_anonimizado,aqui,Squirt,bebida,3.0,25.0,sin_salsa,75.0,entregado
+4f341098-a5f3-419a-a3d1-ba774ad41e2e,2024-07-23 09:10:30,cliente_anonimizado,domicilio,Chicharrón,guisado,1.0,20.0,roja,20.0,entregado
+b02b2ffa-95f2-400c-955b-f3abc76cac94,2024-10-12 10:10:42,cliente_anonimizado,domicilio,Manzanita Sidral,bebida,4.0,25.0,sin_salsa,100.0,entregado
+0219d0e6-caa0-4998-ab32-e9c7297950cf,2024-05-29 10:45:09,cliente_anonimizado,domicilio,Coca-Cola,bebida,3.0,25.0,sin_salsa,75.0,entregado
+7d12cf65-a6bc-47b1-aa7f-7c5a1bd11917,2024-10-02 08:15:45,cliente_anonimizado,domicilio,Lengua,guisado,5.0,20.0,verde,100.0,cancelado
+0b7598af-57b7-4e96-bc21-959c9f7191cf,2024-01-30 11:43:20,cliente_anonimizado,aqui,Coca-Cola,bebida,5.0,25.0,sin_salsa,125.0,entregado
+ec8c9e40-493f-41cf-8ca9-bec331702ea5,2024-03-08 08:05:57,cliente_anonimizado,domicilio,Fanta de Naranja,bebida,1.0,25.0,sin_salsa,25.0,entregado
+c4207ce8-0bab-4f0c-89e1-58f5e28ac00e,2024-11-22 10:08:50,cliente_anonimizado,llevar,Coca-Cola,bebida,2.0,25.0,sin_salsa,50.0,entregado
+95292ab7-c0c9-4385-9318-37048fb78017,2024-01-27 08:45:40,cliente_anonimizado,aqui,Frijoles,guisado,2.0,20.0,verde,40.0,entregado
+6a426e56-cd97-45be-b5f6-2625d12f67b9,2024-09-28 11:59:52,cliente_anonimizado,llevar,Pepena,guisado,1.0,20.0,roja,20.0,entregado
+9e816c58-fe2c-4447-95de-8d0ed8127922,2024-03-22 09:23:52,cliente_anonimizado,domicilio,Chicharrón,guisado,3.0,20.0,verde,60.0,entregado
+f2faffc3-93d4-4696-90d4-3a92b7f1397a,2024-08-20 08:23:59,cliente_anonimizado,domicilio,Chicharrón,guisado,5.0,20.0,roja,100.0,entregado
+5593d3a0-8a3c-4fee-97a1-d70720dae28e,2024-08-30 07:28:29,cliente_anonimizado,domicilio,Pepena,guisado,2.0,20.0,verde,40.0,entregado
+e0545478-24ef-491b-badc-568aa5850fe2,2024-06-07 07:58:10,cliente_anonimizado,domicilio,Pepena,guisado,1.0,20.0,verde,20.0,entregado
+6ed39144-8856-4263-8070-134f06a54f27,2024-04-16 07:21:26,cliente_anonimizado,aqui,Chicharrón,guisado,2.0,20.0,roja,40.0,entregado
+f3768c6f-d36a-464c-b1be-22a39691654c,2024-07-02 11:59:35,cliente_anonimizado,aqui,Manzanita Sidral,bebida,,25.0,sin_salsa,24.66,entregado
+0bd1d7c8-3dd3-40cc-8f9d-9fe7241ed5bb,2024-01-02 08:34:29,cliente_anonimizado,aqui,Chicharrón,guisado,1.0,20.0,verde,20.0,entregado
+17d341ba-7126-4281-a7cf-db93ff037a74,2024-07-30 08:26:15,cliente_anonimizado,aqui,Coca-Cola,bebida,2.0,25.0,sin_salsa,50.0,entregado
+79cd5b42-0d91-417c-a268-bd8eca599186,2024-08-06 09:49:10,cliente_anonimizado,domicilio,Lengua,guisado,1.0,20.0,roja,20.0,entregado
+6024a47b-d4a0-4882-b1ea-4b48b99de2f2,2024-11-30 07:44:58,cliente_anonimizado,domicilio,Rajas con crema y elote,guisado,2.0,20.0,verde,40.0,entregado
+f826b37f-62be-404a-8586-cc79ed23665c,2024-08-22 07:19:13,cliente_anonimizado,domicilio,Carne de puerco con calabacita,guisado,1.0,20.0,roja,20.0,cancelado
+1be8a501-abe6-4edd-94c4-65e6a56c98b7,2024-06-25 08:25:01,cliente_anonimizado,aqui,Squirt,bebida,3.0,25.0,sin_salsa,81.91,entregado
+2c137954-9a97-4ddd-a978-78c4b98982db,2024-02-22 09:54:57,cliente_anonimizado,domicilio,Rajas con crema y elote,guisado,4.0,20.0,roja,80.0,entregado
+f04849fb-9a4b-40ec-b750-dac8219abbe5,2024-04-19 09:37:54,cliente_anonimizado,aqui,Lengua,guisado,,20.0,roja,20.0,entregado
+4f29d258-223b-4ba3-8556-c082c0e0d9fb,2024-07-16 09:55:48,cliente_anonimizado,llevar,Carne de puerco con calabacita,guisado,3.0,20.0,verde,60.0,entregado
+6dcd4561-dd87-42ec-a966-869ad59f697e,2024-02-01 07:25:23,cliente_anonimizado,domicilio,Carne de res a la mexicana,guisado,1.0,20.0,verde,20.0,entregado
+46837e05-a3ef-41d0-918c-110e1fc8e84a,2024-05-11 10:46:22,cliente_anonimizado,aqui,Pepena,guisado,5.0,20.0,verde,100.0,entregado
+fe2e8acb-8691-42c9-8ab7-c46100bccee3,2024-09-14 07:52:34,cliente_anonimizado,domicilio,Machaca,guisado,1.0,20.0,roja,20.0,cancelado
+14f2c222-bd13-4d6e-8c98-95a9fd7d0056,2024-06-13 09:35:06,cliente_anonimizado,domicilio,Pepena,guisado,2.0,20.0,verde,40.0,entregado
+79dd4194-148d-40d3-b0fd-32cf4dc58d0c,2024-09-20 09:19:16,cliente_anonimizado,domicilio,Lengua,guisado,2.0,20.0,roja,40.0,entregado
+62380166-c307-4d3f-bc74-e35fe4c1d7bb,2024-05-04 08:47:21,cliente_anonimizado,aqui,Pepena,guisado,4.0,20.0,verde,80.0,entregado
+dee08d56-6d0f-4850-93f2-ff75546a8962,2024-08-28 10:54:03,cliente_anonimizado,llevar,Squirt,bebida,2.0,25.0,sin_salsa,50.0,entregado
+fbc3792f-0060-442c-9a18-c16e49425af1,2024-08-20 07:36:26,cliente_anonimizado,domicilio,Lengua,guisado,2.0,20.0,verde,40.0,entregado
+fe143bc4-b61b-458b-bd7f-a0db1facc5d6,2024-11-15 08:23:38,cliente_anonimizado,aqui,Pepena,guisado,3.0,20.0,roja,60.0,entregado
+26011f1a-6ff0-4dd4-bbb8-c08a2291bcec,2024-05-11 07:13:51,cliente_anonimizado,domicilio,Machaca,guisado,2.0,20.0,roja,40.0,entregado
+75d03fcc-0233-44f1-b165-0db13f13fcf7,2024-11-12 08:52:51,cliente_anonimizado,llevar,Squirt,bebida,4.0,25.0,sin_salsa,100.0,cancelado
+71b49a2d-a143-4a0f-a151-17f6c042564d,2024-04-16 09:47:24,cliente_anonimizado,aqui,Pepena,guisado,4.0,20.0,roja,80.0,entregado
+da62fb47-6420-4403-a89e-b7d312300428,2024-08-09 08:10:46,cliente_anonimizado,domicilio,Machaca,guisado,1.0,20.0,verde,20.0,entregado
+54e75879-941c-4af6-9773-6ba8da9e2538,2024-06-04 07:30:15,cliente_anonimizado,domicilio,Pepena,guisado,3.0,20.0,roja,60.0,cancelado
+9c8b7151-677b-415f-9c24-15a79b74635c,2024-07-24 07:50:30,cliente_anonimizado,aqui,Chicharrón,guisado,1.0,20.0,roja,20.0,entregado
+742d3743-c527-49bc-a66f-a28a0ca323b6,2024-06-06 11:58:44,cliente_anonimizado,domicilio,Squirt,bebida,2.0,25.0,sin_salsa,50.0,entregado
+60fff228-be6e-4acf-ba19-bf72ca49a7a4,2024-05-28 07:48:22,cliente_anonimizado,domicilio,Fanta de Naranja,bebida,3.0,25.0,sin_salsa,75.0,entregado
+2762a6ac-46a7-48e0-8fad-1328f4660c3e,2024-09-14 11:18:21,cliente_anonimizado,aqui,Rajas con Crema,guisado,2.0,20.0,verde,40.0,entregado
+78bdaa9b-b0f4-4e2f-bd61-648b93fc1759,2024-11-12 09:49:06,cliente_anonimizado,llevar,Chicharrón,guisado,1.0,20.0,roja,20.0,entregado
+4c1ca21b-d22a-4c14-ac73-f5f4639bba64,2024-08-02 08:41:56,cliente_anonimizado,llevar,Coca-Cola,bebida,1.0,25.0,sin_salsa,25.0,entregado
+3579b0d1-19ad-413e-83d8-2794ea714699,2024-03-01 09:02:42,cliente_anonimizado,aqui,Lengua,guisado,3.0,20.0,verde,60.0,entregado
+df1de67a-b8ec-42c0-b342-2fb9d994f09a,2024-12-28 11:34:04,cliente_anonimizado,domicilio,Squirt,bebida,2.0,25.0,sin_salsa,50.0,entregado
+cbfc9ff6-8410-4b3e-b937-d62174df8f41,2024-08-01 09:41:34,cliente_anonimizado,domicilio,Squirt,bebida,2.0,25.0,sin_salsa,50.0,entregado
+914ed73c-f75e-4f53-8f2f-dad1d4a780ca,2024-05-16 08:05:28,cliente_anonimizado,aqui,Squirt,bebida,2.0,25.0,sin_salsa,50.0,entregado
+b79daa0e-add7-4707-a74e-aaa3069060ad,2024-08-29 08:03:54,cliente_anonimizado,aqui,Lengua,guisado,3.0,20.0,roja,60.0,entregado
+2912a9a3-25cb-4519-a5e1-fb2980faef11,2024-08-16 08:48:59,cliente_anonimizado,domicilio,Pepena,guisado,5.0,20.0,roja,100.0,cancelado
+56405bc5-1330-400b-bd59-dcdd02e05007,2024-07-10 09:25:43,cliente_anonimizado,domicilio,Chicharrón,guisado,1.0,20.0,verde,20.0,entregado
+df7ae305-7f36-48c9-9528-ab66e9b81421,2024-08-15 11:29:02,cliente_anonimizado,aqui,Carne de res a la mexicana,guisado,5.0,20.0,verde,100.0,entregado
+1428ad3b-506f-4402-8e71-3aefcfafff7b,2024-11-27 07:09:52,cliente_anonimizado,aqui,Carne de res a la mexicana,guisado,2.0,20.0,verde,40.0,entregado
+18921a28-502f-45fb-8716-7e50324336da,2024-09-21 11:24:57,cliente_anonimizado,domicilio,Squirt,bebida,1.0,25.0,sin_salsa,25.0,entregado
+ecd2ac10-50e3-454b-8d69-7abe193c82ef,2024-07-09 09:00:03,cliente_anonimizado,aqui,Agua fresca del día,bebida,1.0,25.0,sin_salsa,25.0,entregado
+b9e5850b-3b51-49fb-845c-2d09af6d91a5,2024-10-16 09:22:59,cliente_anonimizado,llevar,Fanta de Naranja,bebida,2.0,25.0,sin_salsa,50.0,entregado
+309a7bc6-ad53-41be-a9c5-2b277b8cc639,2024-09-05 09:28:54,cliente_anonimizado,domicilio,Chicharrón,guisado,3.0,20.0,verde,60.0,entregado
+8ef97b37-b4a0-4f0d-aeef-771790a0e6a5,2024-12-06 07:01:43,cliente_anonimizado,aqui,Agua fresca del día,bebida,2.0,25.0,sin_salsa,50.0,entregado
+04bddf93-cfdc-496a-a642-5f8dbf19260b,2024-11-13 11:53:43,cliente_anonimizado,aqui,Chicharrón,guisado,1.0,20.0,verde,20.0,entregado
+21aa412c-2d81-4fbe-aabb-241aea83c7e1,2024-07-05 09:38:26,cliente_anonimizado,domicilio,Squirt,bebida,3.0,25.0,sin_salsa,75.0,entregado
+8a05c810-0f02-4ca8-b273-fc59ed2938b0,2024-04-23 08:24:13,cliente_anonimizado,domicilio,Chicharrón,guisado,2.0,20.0,verde,40.0,entregado
+9e757675-df41-430b-94ab-707c99f3fe76,2024-05-25 09:25:24,cliente_anonimizado,domicilio,Lengua,guisado,3.0,20.0,verde,60.0,entregado
+a575d5b9-ed99-4798-a332-3b45187f2dde,2024-02-15 07:21:21,cliente_anonimizado,domicilio,Chicharrón,guisado,2.0,20.0,verde,40.0,entregado
+edfb71e5-c062-4567-81b8-5208809f4b8b,2024-06-22 07:36:13,cliente_anonimizado,domicilio,Machaca,guisado,2.0,20.0,roja,40.0,entregado
+93b6f7ad-51f7-45bc-ad6a-a98f16fb7e15,2024-06-18 08:46:19,cliente_anonimizado,llevar,Frijoles,guisado,2.0,20.0,verde,29.31,entregado
+d318ab5a-5f3b-4ad8-867b-a50e7a0819dc,2024-09-10 10:56:59,cliente_anonimizado,aqui,Coca-Cola,bebida,3.0,25.0,sin_salsa,75.0,entregado
+a5284ab6-083a-4f85-8da0-65baf2bb373e,2024-09-03 08:31:21,cliente_anonimizado,domicilio,Lengua,guisado,1.0,20.0,verde,20.0,entregado
+73d6d444-af60-44a4-8ee0-c9fce3b7e913,2024-06-06 09:49:48,cliente_anonimizado,aqui,Chicharrón,guisado,2.0,20.0,verde,40.0,entregado
+f3326dff-472d-47fe-ad5c-d83b495b3998,2024-05-08 08:51:38,cliente_anonimizado,aqui,Carne de puerco con calabacita,guisado,2.0,20.0,verde,40.0,cancelado
+2d250be0-6e57-4dba-9034-f0bfdfd7e54d,2024-09-06 11:20:52,cliente_anonimizado,domicilio,Agua fresca del día,bebida,2.0,25.0,sin_salsa,50.0,entregado
+dd548dba-e3d2-41b8-9c2e-072dd6c3a7c8,2024-07-17 07:57:09,cliente_anonimizado,domicilio,Lengua,guisado,2.0,20.0,roja,40.0,entregado
+fb449c9e-d5da-4c50-a23b-bf8f345dce34,2024-05-29 09:39:30,cliente_anonimizado,domicilio,Squirt,bebida,3.0,25.0,sin_salsa,75.0,entregado
+df167796-e77b-46e3-abc0-e6b68ddb25f0,2024-06-19 10:59:07,cliente_anonimizado,aqui,chicharron,guisado,2.0,20.0,roja,40.0,entregado
+b27d58a3-af34-41e7-b889-03309868efd2,2024-05-25 10:04:51,cliente_anonimizado,domicilio,Rajas con crema y elote,guisado,2.0,20.0,roja,40.0,entregado
+b874eeaa-b9ed-43d7-9ea7-5dc29ee6b794,2024-06-11 09:53:28,cliente_anonimizado,llevar,Chicharrón,guisado,1.0,20.0,roja,20.0,entregado
+d6e68549-1441-4464-8ed6-0d26c832e1ee,2024-04-25 09:34:15,cliente_anonimizado,domicilio,Lengua,guisado,3.0,20.0,verde,60.0,entregado
+a1d43b28-92ef-4950-b119-8b2896c90dae,2024-06-25 08:42:18,cliente_anonimizado,domicilio,Carne de puerco con calabacita,guisado,3.0,20.0,verde,60.0,entregado
+fee9a90a-4ecf-4d90-aff4-eff5c9a04044,2024-09-06 07:09:50,cliente_anonimizado,llevar,Lengua,guisado,3.0,20.0,verde,60.0,entregado
+3eaed259-6826-438a-94d2-939c26398f12,2024-03-16 11:44:53,cliente_anonimizado,aqui,Machaca,guisado,1.0,20.0,verde,20.0,entregado
+a70612c5-bcd3-4bcf-bb75-e44981b8e7c3,2024-02-14 11:02:41,cliente_anonimizado,aqui,Pepena,guisado,3.0,20.0,roja,60.0,entregado
+914a0baf-b0cb-4cc1-add1-788e15f43f4a,2024-06-08 08:25:28,cliente_anonimizado,domicilio,pepena,guisado,2.0,20.0,roja,40.0,entregado
+1f312fc4-8a4f-49ba-8558-4deacce95f00,2024-01-30 08:23:07,cliente_anonimizado,aqui,Carne de res a la mexicana,guisado,2.0,20.0,verde,40.0,entregado
+913d8f58-26b1-4e6d-81b9-3af2e3f3e3cb,2024-09-19 10:13:01,cliente_anonimizado,aqui,Coca-Cola,bebida,,25.0,sin_salsa,50.0,entregado
+1f9dd9fb-96f3-470e-b0b3-91412409070c,2024-08-16 09:50:39,cliente_anonimizado,aqui,Chicharrón,guisado,1.0,20.0,verde,20.0,entregado
+5c5ecd4b-323d-4578-a6f7-0de09de5fce1,2024-11-16 08:10:22,cliente_anonimizado,aqui,Chicharrón,guisado,2.0,20.0,roja,40.0,cancelado
+60b5fa10-bf50-436f-a655-72580c087d27,2024-06-01 07:27:04,cliente_anonimizado,aqui,Coca-Cola,bebida,5.0,25.0,sin_salsa,125.0,cancelado
+f425fb7a-135d-44b0-b77b-cc3922a7a265,2024-05-30 10:52:47,cliente_anonimizado,domicilio,Coca-Cola,bebida,,25.0,sin_salsa,25.0,entregado
+fe3b0176-5b37-4a7b-981b-01316b223384,2024-08-21 10:19:37,cliente_anonimizado,domicilio,Carne de puerco con calabacita,guisado,2.0,20.0,verde,31.64,entregado
+180e01e4-476a-49da-be19-ee4536cffe66,2024-08-16 09:13:23,cliente_anonimizado,domicilio,Chicharrón,guisado,1.0,20.0,verde,20.0,entregado
+d7d35b4f-768d-4ab6-a9ad-d13ac36d9e06,2024-02-27 09:24:47,cliente_anonimizado,domicilio,Coca-Cola,bebida,1.0,25.0,sin_salsa,25.0,entregado

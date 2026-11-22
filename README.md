@@ -107,6 +107,36 @@ streamlit run streamlit_app.py
 
 ---
 
+## Variables de entorno: localhost vs. Docker
+
+> [!IMPORTANT]
+> `.env.example` usa `localhost` para todos los servicios. Esto es correcto cuando ejecutas la API, el worker o el tablero **directamente en tu máquina** (fuera de contenedores).
+>
+> Cuando usas `docker-compose up`, los contenedores se comunican por la **red interna de Docker** mediante los **nombres de servicio** (`minio`, `rabbitmq`, `postgres`). Las variables necesarias se definen directamente en la sección `environment` de cada servicio en `docker-compose.yml` y **sobreescriben** las del `.env` automáticamente.
+>
+> | Variable | Valor en `.env.example` (local sin Docker) | Valor en docker-compose (dentro de contenedor) |
+> |---|---|---|
+> | `POSTGRES_HOST` | `localhost` | `postgres` |
+> | `MINIO_ENDPOINT` | `http://localhost:9000` | `http://minio:9000` |
+> | `RABBITMQ_URL` | `amqp://guest:guest@localhost:5672/` | `amqp://guest:guest@rabbitmq:5672/` |
+>
+> **Nunca cambies** el `.env.example` a nombres de servicio: está pensado para uso local sin Docker.
+
+---
+
+## Datos y tablero sin conexión a MinIO
+
+El tablero genera automáticamente los datos de muestra al arrancar si no encuentra
+`data/clean/pedidos_clean.csv`. El script `scripts/preparar_datos.py`:
+
+1. Genera `pedidos_raw.csv` usando el simulador con `SEED=42` (reproducible).
+2. Aplica los 5 pilares de limpieza para producir `pedidos_clean.csv`.
+3. Sube `pedidos_clean.csv` a MinIO (zona `clean/`) si está disponible.
+
+El tablero siempre lee primero desde MinIO; si no está, usa el archivo local.
+
+---
+
 ## Pruebas
 
 ```bash
