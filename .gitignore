@@ -1,25 +1,18 @@
-# =============================================================
-# .gitignore — Tacos Las Cazuelitas
-# Excluye secretos, artefactos de build y archivos generados
-# =============================================================
-
-# ── Secretos y configuración local ──────────────────────────
+# Secretos
 .env
 
-# ── Terraform ───────────────────────────────────────────────
+# Terraform
 *.tfstate
 *.tfstate.backup
 /infra/terraform/.terraform
 
-# ── Datos CSV (excepto muestras de referencia) ───────────────
+# Datos CSV (se generan al arrancar; solo se sube la muestra)
 *.csv
 !data/sample/*.csv
 
-# ── Python ───────────────────────────────────────────────────
+# Python
 __pycache__/
 *.py[cod]
-*.pyc
-*.pyo
 .venv/
 venv/
 *.egg-info/
@@ -28,18 +21,12 @@ build/
 .mypy_cache/
 .pytest_cache/
 
-# ── Modelos ML (binarios sin versionar) ─────────────────────
-models/*.pkl
-services/modelos/models/*.pkl
-*.pkl
+# Los modelos entrenados SÍ se suben (pesan ~13 MB) para que Docker los incluya
+# (por eso no hay regla para *.pkl)
 
-# ── Node / frontend ──────────────────────────────────────────
+# Otros
 node_modules/
-
-# ── macOS ────────────────────────────────────────────────────
 .DS_Store
-
-# ── IDEs ─────────────────────────────────────────────────────
 .idea/
 .vscode/settings.json
 *.swp
