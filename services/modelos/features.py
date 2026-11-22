@@ -42,17 +42,24 @@ def construir_features_churn(df_pedidos: pd.DataFrame) -> pd.DataFrame:
     Retorna:
         DataFrame indexado por cliente_id con todas las features.
     """
-    # Verificar columnas mínimas
-    cols_requeridas = {"cliente_id", "fecha_hora", "tipo_entrega", "total", "producto_id"}
+    # Verificar columnas mínimas permitiendo 'producto' o 'producto_id'
+    cols_requeridas = {"cliente_id", "fecha_hora", "tipo_entrega", "total"}
     cols_faltantes  = cols_requeridas - set(df_pedidos.columns)
     if cols_faltantes:
         logger.error("Columnas faltantes en df_pedidos: %s", cols_faltantes)
         return pd.DataFrame()
 
+    col_prod = "producto_id" if "producto_id" in df_pedidos.columns else "producto"
+    if col_prod not in df_pedidos.columns:
+        logger.error("Se requiere 'producto_id' o 'producto' en df_pedidos.")
+        return pd.DataFrame()
+
     # Asegurar tipo datetime
     df = df_pedidos.copy()
     df["fecha_hora"] = pd.to_datetime(df["fecha_hora"])
-    hoy = pd.Timestamp(date.today())
+    # Fecha de referencia: máximo de la serie histórica para datasets cerrados
+    max_fecha = df["fecha_hora"].max()
+    hoy = max_fecha + pd.Timedelta(days=1)
 
     # ── Agrupar por pedido para evitar duplicar por producto ──────────────────
     # (un pedido puede tener varios productos → tomamos el primer registro por pedido)
@@ -92,7 +99,7 @@ def construir_features_churn(df_pedidos: pd.DataFrame) -> pd.DataFrame:
 
     # ── Variedad de productos ─────────────────────────────────────────────────
     variedad = (
-        df.groupby("cliente_id")["producto_id"]
+        df.groupby("cliente_id")[col_prod]
         .nunique()
         .rename("variedad")
     )

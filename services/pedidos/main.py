@@ -80,13 +80,15 @@ class RespuestaPedido(BaseModel):
 # ---------------------------------------------------------------------------
 
 def hashear_password(password: str) -> str:
-    """Genera el hash bcrypt de una contraseña en texto plano."""
-    return pwd_context.hash(password)
+    """Genera el hash bcrypt de una contraseña en texto plano (máx 72 bytes según especificación bcrypt)."""
+    pw_bytes = password.encode("utf-8")[:72].decode("utf-8", errors="ignore")
+    return pwd_context.hash(pw_bytes)
 
 
 def verificar_password(password: str, password_hash: str) -> bool:
     """Verifica si la contraseña coincide con el hash almacenado."""
-    return pwd_context.verify(password, password_hash)
+    pw_bytes = password.encode("utf-8")[:72].decode("utf-8", errors="ignore")
+    return pwd_context.verify(pw_bytes, password_hash)
 
 
 def crear_token_jwt(data: dict) -> str:

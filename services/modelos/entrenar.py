@@ -44,11 +44,20 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # ─── Rutas ───────────────────────────────────────────────────────────────────
-DIR_BASE    = Path(__file__).parent
-DIR_MODELOS = DIR_BASE / "models"
+DIR_BASE         = Path(__file__).resolve().parent
+ROOT_DIR         = DIR_BASE.parents[1]
+DIR_MODELOS      = DIR_BASE / "models"
 DIR_MODELOS.mkdir(parents=True, exist_ok=True)
+DIR_MODELOS_ROOT = ROOT_DIR / "models"
+DIR_MODELOS_ROOT.mkdir(parents=True, exist_ok=True)
 
-RUTA_CSV = Path("data/pedidos_clean.csv")
+# Buscar CSV limpio en las ubicaciones habituales
+if (ROOT_DIR / "data" / "clean" / "pedidos_clean.csv").exists():
+    RUTA_CSV = ROOT_DIR / "data" / "clean" / "pedidos_clean.csv"
+elif Path("data/clean/pedidos_clean.csv").exists():
+    RUTA_CSV = Path("data/clean/pedidos_clean.csv")
+else:
+    RUTA_CSV = Path("data/pedidos_clean.csv")
 
 
 # ═════════════════════════════════════════════════════════════════════════════
@@ -176,7 +185,8 @@ def entrenar_sarima(df: pd.DataFrame) -> None:
     # Guarda el modelo entrenado
     ruta_salida = DIR_MODELOS / "sarima_pedidos.pkl"
     joblib.dump(mejor_modelo, ruta_salida)
-    logger.info("Modelo SARIMA guardado en %s", ruta_salida)
+    joblib.dump(mejor_modelo, DIR_MODELOS_ROOT / "sarima_pedidos.pkl")
+    logger.info("Modelo SARIMA guardado en %s y %s", ruta_salida, DIR_MODELOS_ROOT)
 
 
 # ═════════════════════════════════════════════════════════════════════════════
@@ -254,13 +264,16 @@ def entrenar_clasificadores_churn(df: pd.DataFrame) -> None:
         nombre_archivo = "nb_churn.pkl" if nombre == "NaiveBayes" else "arbol_churn.pkl"
         ruta = DIR_MODELOS / nombre_archivo
         joblib.dump(clf, ruta)
-        logger.info("Modelo %s guardado en %s", nombre, ruta)
+        joblib.dump(clf, DIR_MODELOS_ROOT / nombre_archivo)
+        logger.info("Modelo %s guardado en %s y %s", nombre, ruta, DIR_MODELOS_ROOT)
 
     # Guarda reporte JSON con métricas de ambos modelos
     ruta_metricas = DIR_MODELOS / "metricas_modelos.json"
     with open(ruta_metricas, "w", encoding="utf-8") as f:
         json.dump(metricas, f, ensure_ascii=False, indent=2)
-    logger.info("Métricas guardadas en %s", ruta_metricas)
+    with open(DIR_MODELOS_ROOT / "metricas_modelos.json", "w", encoding="utf-8") as f:
+        json.dump(metricas, f, ensure_ascii=False, indent=2)
+    logger.info("Métricas guardadas en %s y %s", ruta_metricas, DIR_MODELOS_ROOT)
 
     # Resumen comparativo
     logger.info("=== Comparación de modelos ===")

@@ -10,10 +10,10 @@
 
 | ID  | Entregable                             | Descripción                                              | Estado       |
 |-----|----------------------------------------|----------------------------------------------------------|--------------|
-| E0  | Infraestructura base                   | Repo, Docker Compose, esquema PostgreSQL, CI             | ✅ Completo  |
-| E1  | API de pedidos + worker                | FastAPI, cola RabbitMQ/SQS, ingesta a MinIO              | 🔄 En curso  |
-| E2  | Tablero de analítica                   | Dashboard Streamlit: ventas, productos, pronóstico       | 🔄 En curso  |
-| E3  | Modelos predictivos                    | ARIMA/SARIMA para demanda diaria, servido via FastAPI    | ⏳ Pendiente |
+| E0  | Propuesta de Negocio & Nube Base       | Propuesta de valor, presupuesto $0, IAM, MFA, repo, CI   | ✅ Completo  |
+| E1  | Tablero Analítico & Calidad de Datos   | Dashboard Streamlit, 5 pilares limpieza, EDA, calibración| ✅ Completo  |
+| E2  | Arquitectura Cloud & Series de Tiempo  | API FastAPI, Worker RabbitMQ/SQS, RDS/MinIO, OLS manual  | ✅ Completo  |
+| E3  | Producción, MLOps & Resiliencia        | Docker multi-stage, K8s, Terraform, Locust, SARIMA/Churn| ✅ Completo  |
 
 ---
 
@@ -56,28 +56,32 @@ docker-compose up --build
 ```
 data-startup-taqueria/
 ├── .devcontainer/
-│   └── devcontainer.json        # Entorno de desarrollo reproducible
-├── db/
-│   └── migrations/
-│       ├── 001_schema_inicial.sql
-│       └── 002_seed_productos.sql
-├── infra/
-│   └── terraform/               # IaC para despliegue en nube (E3+)
-├── notebooks/                   # Análisis EDA (Jupyter)
-├── services/
-│   ├── pedidos/                 # API REST FastAPI (pedidos)
-│   │   └── Dockerfile
-│   ├── worker/                  # Consumidor de cola (procesamiento)
-│   │   └── Dockerfile
-│   ├── modelos/                 # Servicio de predicción ARIMA
-│   │   └── Dockerfile
-│   └── tablero/                 # Dashboard Streamlit
-│       ├── Dashboard.py
-│       └── Dockerfile
-├── tests/                       # Suite de pruebas (pytest)
+│   └── devcontainer.json        # Entorno reproducible (Python 3.11 + Docker-in-Docker)
 ├── data/
-│   └── sample/                  # CSVs de muestra (sí trackeados en git)
-├── models/                      # Modelos entrenados (*.pkl excluidos en git)
+│   ├── raw/generar_pedidos.py   # Generador calibrado con entrevista de Doña Rocío
+│   ├── clean/                   # Dataset limpio y reporte JSON de calidad
+│   └── sample/                  # Muestra representativa trackeada en git
+├── db/migrations/               # Migraciones PostgreSQL (DDL + catálogo)
+├── docs/                        # Entregables E0, E1, E2, E3 y evidencias IAM/Presupuesto
+├── infra/
+│   ├── terraform/               # IaC para AWS (S3, SQS, IAM)
+│   ├── lambda_worker/           # Handler AWS Lambda con soporte batch failure
+│   └── *.json                   # Políticas IAM de despliegue y worker
+├── k8s/                         # Manifiestos Kubernetes (HPA, Deployment, Service, Secrets)
+├── notebooks/                   # EDA reproducible en Jupyter (01_eda_pedidos.ipynb)
+├── services/
+│   ├── pedidos/                 # API REST FastAPI (pedidos, auth JWT/bcrypt, S3/SQS)
+│   ├── worker/                  # Consumidor asíncrono con reintentos y DLQ
+│   ├── modelos/                 # Servicio de inferencia ML (SARIMA + Churn)
+│   ├── analitica/               # OLS manual por ecuación normal y series de tiempo
+│   ├── ingesta/                 # Ingesta masiva de CSV a cola/S3
+│   └── tablero/                 # Dashboard Streamlit v1 y v3
+├── tests/                       # Suite automatizada (23 pruebas unitarias y de integración)
+│   ├── test_limpieza/
+│   ├── test_api/
+│   ├── test_worker/
+│   ├── test_analitica/
+│   └── locust/                  # Pruebas de carga (50 usuarios concurrentes)
 ├── .env.example
 ├── .gitignore
 ├── docker-compose.yml
@@ -86,7 +90,7 @@ data-startup-taqueria/
 ├── requirements-eda.txt
 ├── requirements-pipeline.txt
 ├── requirements-modelos.txt
-├── streamlit_app.py             # Punto de entrada para Streamlit Cloud
+├── streamlit_app.py             # Punto de entrada para Streamlit
 └── README.md
 ```
 

@@ -1,11 +1,19 @@
 {
   // ── Tacos Las Cazuelitas — Dev Container ──────────────────
   // Entorno de desarrollo reproducible basado en Python 3.11.
-  // Al abrir en VS Code con la extensión Dev Containers se
-  // construye automáticamente el contenedor y se instalan
-  // todas las dependencias.
+  // Al abrir en VS Code o GitHub Codespaces se construye
+  // automáticamente el contenedor con soporte de Docker-in-Docker
+  // y se instalan todas las dependencias del proyecto.
   "name": "taqueria-devcontainer",
   "image": "mcr.microsoft.com/devcontainers/python:3.11",
+
+  // Feature Docker-in-Docker para ejecutar docker y docker-compose dentro de Codespaces
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {
+      "version": "latest",
+      "enableOnDataRoot": true
+    }
+  },
 
   // Instala las tres capas de dependencias al crear el contenedor
   "postCreateCommand": "pip install --upgrade pip && pip install -r requirements.txt -r requirements-eda.txt -r requirements-pipeline.txt",
@@ -30,8 +38,43 @@
     }
   },
 
-  // Reenvía los puertos de los servicios locales al host
+  // Reenvía los puertos de la API, tablero y servicios de docker-compose
   "forwardPorts": [8000, 8001, 8501, 5432, 9000, 9001, 5672, 15672],
+
+  "portsAttributes": {
+    "8000": {
+      "label": "API Pedidos (FastAPI)",
+      "onAutoForward": "notify"
+    },
+    "8001": {
+      "label": "API Modelos ML",
+      "onAutoForward": "silent"
+    },
+    "8501": {
+      "label": "Tablero Streamlit",
+      "onAutoForward": "openBrowser"
+    },
+    "5432": {
+      "label": "PostgreSQL",
+      "onAutoForward": "silent"
+    },
+    "9000": {
+      "label": "MinIO S3 API",
+      "onAutoForward": "silent"
+    },
+    "9001": {
+      "label": "MinIO Console UI",
+      "onAutoForward": "notify"
+    },
+    "5672": {
+      "label": "RabbitMQ AMQP",
+      "onAutoForward": "silent"
+    },
+    "15672": {
+      "label": "RabbitMQ Management UI",
+      "onAutoForward": "notify"
+    }
+  },
 
   "remoteUser": "vscode"
 }

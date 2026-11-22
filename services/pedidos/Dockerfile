@@ -22,9 +22,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 COPY requirements-pipeline.txt .
 RUN pip install --no-cache-dir --prefix=/install -r requirements-pipeline.txt
 
-# Copiar e instalar dependencias completas de la API
+# Copiar e instalar dependencias completas de la API (fijando bcrypt==4.0.1 compatible con passlib)
 COPY requirements.txt .
-RUN pip install --no-cache-dir --prefix=/install -r requirements.txt
+RUN pip install --no-cache-dir --prefix=/install bcrypt==4.0.1 \
+    && pip install --no-cache-dir --prefix=/install -r requirements.txt
 
 # ── Stage 2: runtime ────────────────────────────────────────
 FROM python:3.11-slim AS runtime

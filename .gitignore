@@ -30,6 +30,8 @@ build/
 
 # ── Modelos ML (binarios sin versionar) ─────────────────────
 models/*.pkl
+services/modelos/models/*.pkl
+*.pkl
 
 # ── Node / frontend ──────────────────────────────────────────
 node_modules/
