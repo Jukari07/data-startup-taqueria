@@ -1,0 +1,9 @@
+{
+  "name": "taqueria-devcontainer",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+  "forwardPorts": [8000, 8001, 8501],
+  "remoteUser": "vscode"
+}

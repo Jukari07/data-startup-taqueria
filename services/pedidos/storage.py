@@ -25,41 +25,64 @@ MINIO_SECRET_KEY = os.getenv("MINIO_SECRET_KEY", "minioadmin")
 AWS_REGION = os.getenv("AWS_REGION", "us-east-1")
 
 
-def get_s3_client():
+def get_s3_client(asegurar: bool = True):
     """
     Retorna un cliente boto3 configurado para S3 o MinIO según el entorno.
 
-    - Si MINIO_ENDPOINT está definido → usa MinIO (entorno local/dev).
+    - Si MINIO_ENDPOINT está definido → usa MinIO / Silo (entorno local/dev).
     - Si no está definido → usa AWS S3 con credenciales del entorno/rol IAM.
     """
     if MINIO_ENDPOINT:
-        # Configuración para MinIO (compatible con API S3)
+        # Configuración para MinIO / Silo (compatible con API S3)
         cliente = boto3.client(
             "s3",
             endpoint_url=MINIO_ENDPOINT,
             aws_access_key_id=MINIO_ACCESS_KEY,
             aws_secret_access_key=MINIO_SECRET_KEY,
             config=Config(signature_version="s3v4"),
-            region_name="us-east-1",  # MinIO acepta cualquier región
+            region_name="us-east-1",  # MinIO / Silo acepta cualquier región
         )
-        # Crear buckets si no existen (útil en desarrollo)
-        _asegurar_buckets(cliente)
+        if asegurar:
+            # Crear buckets si no existen (útil en desarrollo local con pgsty/silo)
+            asegurar_buckets(cliente)
     else:
         # AWS S3: las credenciales vienen del perfil de instancia EC2/ECS o env vars
         cliente = boto3.client("s3", region_name=AWS_REGION)
     return cliente
 
 
-def _asegurar_buckets(cliente) -> None:
+def asegurar_buckets(cliente=None) -> None:
     """
-    Crea los buckets raw y clean en MinIO si aún no existen.
-    Se omite en AWS S3 (los buckets se crean via Terraform).
+    Crea los buckets raw y clean de forma idempotente al arrancar la API o el worker.
+    Funciona tanto en MinIO / Silo (local) como en AWS S3.
     """
-    buckets_existentes = {b["Name"] for b in cliente.list_buckets().get("Buckets", [])}
-    for bucket in [BUCKET_RAW, BUCKET_CLEAN]:
-        if bucket not in buckets_existentes:
-            cliente.create_bucket(Bucket=bucket)
-            print(f"[storage] Bucket creado en MinIO: {bucket}")
+    try:
+        if cliente is None:
+            cliente = get_s3_client(asegurar=False)
+        buckets_existentes = {b["Name"] for b in cliente.list_buckets().get("Buckets", [])}
+        for bucket in [BUCKET_RAW, BUCKET_CLEAN]:
+            if bucket not in buckets_existentes:
+                try:
+                    if AWS_REGION and AWS_REGION != "us-east-1" and not MINIO_ENDPOINT:
+                        cliente.create_bucket(
+                            Bucket=bucket,
+                            CreateBucketConfiguration={"LocationConstraint": AWS_REGION},
+                        )
+                    else:
+                        cliente.create_bucket(Bucket=bucket)
+                    print(f"[storage] Bucket asegurado/creado: {bucket}")
+                except Exception as b_err:
+                    # Idempotencia: si ya existe o pertenece al usuario, no fallar
+                    if "BucketAlready" in str(b_err):
+                        pass
+                    else:
+                        print(f"[storage] Aviso al crear bucket {bucket}: {b_err}")
+    except Exception as exc:
+        print(f"[storage] Aviso al asegurar buckets: {exc}")
+
+
+# Alias para compatibilidad interna
+_asegurar_buckets = asegurar_buckets
 
 
 def _generar_path_raw(nombre_archivo: str) -> str:

@@ -5,7 +5,10 @@
 
 ## 1. Diagrama de Arquitectura del Sistema
 
-La solución implementa una arquitectura desacoplada y orientada a eventos para procesar los pedidos de la taquería. Permite operar al 100 % en local mediante `docker-compose` (con PostgreSQL, MinIO y RabbitMQ) y migrar limpiamente a AWS (RDS PostgreSQL, S3 y SQS) mediante variables de entorno y Terraform sin alterar una sola línea de código fuente.
+La solución implementa una arquitectura desacoplada y orientada a eventos para procesar los pedidos de la taquería. Permite operar al 100 % en local mediante `docker-compose` (con PostgreSQL, MinIO/Silo y RabbitMQ) y migrar limpiamente a AWS (RDS PostgreSQL, S3 y SQS) mediante variables de entorno y Terraform sin alterar una sola línea de código fuente.
+
+> [!NOTE]
+> **Almacenamiento de Objetos (Local vs. Nube):** MinIO retiró sus imágenes públicas oficiales de Docker Hub y Quay.io; en local usamos `pgsty/silo:RELEASE.2026-09-16T00-00-00Z` (fork compatible y mantenido de MinIO), mientras que en AWS el almacenamiento real es Amazon S3. Asimismo, la creación de los buckets `taqueria-raw` y `taqueria-clean` se realiza de forma 100 % idempotente desde el código fuente (`boto3 create_bucket`) al arrancar la API o el worker, eliminando la necesidad de contenedores auxiliares como `minio/mc`.
 
 ```mermaid
 flowchart TD

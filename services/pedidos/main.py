@@ -18,7 +18,7 @@ from pydantic import BaseModel, EmailStr
 
 from services.pedidos.db import get_connection
 from services.pedidos.cola import get_cola
-from services.pedidos.storage import subir_raw
+from services.pedidos.storage import subir_raw, asegurar_buckets
 
 # ---------------------------------------------------------------------------
 # Configuración de la aplicación
@@ -30,6 +30,15 @@ app = FastAPI(
                 "y seguimiento de pedidos, e ingesta masiva de pedidos via CSV.",
     version="2.0.0",
 )
+
+
+@app.on_event("startup")
+def al_iniciar_api():
+    """Asegura de forma idempotente que los buckets raw y clean existan al arrancar la API."""
+    try:
+        asegurar_buckets()
+    except Exception as exc:
+        print(f"[api] Advertencia al verificar/crear buckets de almacenamiento: {exc}")
 
 # ---------------------------------------------------------------------------
 # Seguridad: bcrypt + JWT

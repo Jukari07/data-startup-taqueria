@@ -16,7 +16,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
 from services.pedidos.cola import get_cola, ColaMensajes
-from services.pedidos.storage import descargar_raw, subir_clean
+from services.pedidos.storage import descargar_raw, subir_clean, asegurar_buckets
 from services.pedidos.db import get_connection
 
 # Importar módulo de limpieza (ruta relativa al worker)
@@ -148,6 +148,12 @@ def iniciar_worker() -> None:
     espera_reconexion = 5  # segundos iniciales entre reconexiones
 
     print("[worker] Iniciando worker de pedidos Las Cazuelitas…")
+
+    # Asegurar de forma idempotente que los buckets raw y clean existan
+    try:
+        asegurar_buckets()
+    except Exception as exc:
+        print(f"[worker] Advertencia al verificar/crear buckets: {exc}")
 
     while True:
         cola: ColaMensajes | None = None
