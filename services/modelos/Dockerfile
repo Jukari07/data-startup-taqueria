@@ -45,7 +45,6 @@ COPY --from=builder /install /usr/local
 # Copiar código necesario para el entrenamiento
 COPY services/modelos/ ./services/modelos/
 COPY services/worker/limpieza.py ./services/worker/limpieza.py
-COPY services/worker/__init__.py ./services/worker/__init__.py 2>/dev/null || true
 COPY data/raw/generar_pedidos.py ./data/raw/generar_pedidos.py
 
 # Crear directorios de salida

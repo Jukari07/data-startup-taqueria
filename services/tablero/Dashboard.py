@@ -317,7 +317,8 @@ if n_fft > 10:
     amp_plot = amplitudes[1:]
     periodos_plot = 1.0 / xf_plot
 
-    idx_dom = np.argmax(amp_plot)
+    mascara_ciclos = (periodos_plot >= 2) & (periodos_plot <= 31)
+    idx_dom = np.argmax(np.where(mascara_ciclos, amp_plot, 0))
     periodo_dom = round(periodos_plot[idx_dom], 1)
 
     fig_fft = go.Figure()
