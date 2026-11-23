@@ -50,14 +50,11 @@ COPY data/raw/generar_pedidos.py ./data/raw/generar_pedidos.py
 # Crear directorios de salida
 RUN mkdir -p data/raw data/clean data/sample models services/modelos/models
 
-# Generar datos limpios con semilla fija (SEED=42) y entrenar modelos
-# Si el entrenamiento falla, el build falla (no se sirve sin modelos)
+# Generar datos con semilla fija (SEED=42), limpiarlos y entrenar los modelos.
+# Si algo falla, el build falla (no se sirve sin modelos).
+# (Corregido: antes usaba un comando de Python entre comillas que daba IndentationError.)
 RUN python data/raw/generar_pedidos.py && \
-    python -c " \
-import sys; sys.path.insert(0, '.'); \
-from services.worker.limpieza import limpiar_pedidos; \
-limpiar_pedidos('data/raw/pedidos_raw.csv', 'data/clean/pedidos_clean.csv'); \
-print('[trainer] Datos limpios generados.');" && \
+    python -m services.worker.limpieza && \
     python -m services.modelos.entrenar
 
 # ── Stage 3: runtime ─────────────────────────────────────────

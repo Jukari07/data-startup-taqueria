@@ -232,7 +232,8 @@ st.caption("Dato confirmado en entrevista: En días 15, 16, 30 y 1 el volumen de
 # ────────────────────────────────────────────────────────────────────────────
 # Gráfica b: Histograma del ticket por pedido (regla de Sturges)
 # ────────────────────────────────────────────────────────────────────────────
-st.subheader("🧾 b) Distribución del ticket por pedido – Concentrado entre $60 y $140 MXN")
+p25, p75 = ticket_por_pedido.quantile([0.25, 0.75])
+st.subheader(f"🧾 b) La mitad de los pedidos cuesta entre ${p25:,.0f} y ${p75:,.0f} MXN")
 
 n_pedidos = len(ticket_por_pedido)
 n_bins_sturges = max(5, math.ceil(math.log2(n_pedidos) + 1)) if n_pedidos > 0 else 10
