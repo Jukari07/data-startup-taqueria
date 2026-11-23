@@ -50,12 +50,15 @@ COPY data/raw/generar_pedidos.py ./data/raw/generar_pedidos.py
 # Crear directorios de salida
 RUN mkdir -p data/raw data/clean data/sample models services/modelos/models
 
-# Generar datos con semilla fija (SEED=42), limpiarlos y entrenar los modelos.
-# Si algo falla, el build falla (no se sirve sin modelos).
-# (Corregido: antes usaba un comando de Python entre comillas que daba IndentationError.)
-RUN python data/raw/generar_pedidos.py && \
-    python -m services.worker.limpieza && \
-    python -m services.modelos.entrenar
+# Paso 1: generar pedidos sintéticos con semilla fija (SEED=42).
+RUN python data/raw/generar_pedidos.py
+
+# Paso 2: limpiar los datos (llamada directa y en UNA sola línea para evitar
+# errores de sangría). Después se lista data/clean para comprobar que el CSV existe.
+RUN python -c "from services.worker.limpieza import limpiar_pedidos; limpiar_pedidos('data/raw/pedidos_raw.csv', 'data/clean/pedidos_clean.csv')" && ls -la data/clean
+
+# Paso 3: entrenar los modelos. Si falla, el build falla (no se sirve sin modelos).
+RUN python -m services.modelos.entrenar
 
 # ── Stage 3: runtime ─────────────────────────────────────────
 FROM python:3.11-slim AS runtime
