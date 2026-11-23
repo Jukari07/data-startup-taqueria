@@ -53,9 +53,8 @@ RUN mkdir -p data/raw data/clean data/sample models services/modelos/models
 # Paso 1: generar pedidos sintéticos con semilla fija (SEED=42).
 RUN python data/raw/generar_pedidos.py
 
-# Paso 2: limpiar los datos (llamada directa y en UNA sola línea para evitar
-# errores de sangría). Después se lista data/clean para comprobar que el CSV existe.
-RUN python -c "from services.worker.limpieza import limpiar_pedidos; limpiar_pedidos('data/raw/pedidos_raw.csv', 'data/clean/pedidos_clean.csv')" && ls -la data/clean
+# Paso 2: limpiar los datos y MOSTRAR dónde quedó el CSV (diagnóstico temporal).
+RUN python -c "from services.worker.limpieza import limpiar_pedidos; limpiar_pedidos('data/raw/pedidos_raw.csv', 'data/clean/pedidos_clean.csv')" && echo "=== DIAGNOSTICO ===" && pwd && ls -la data/clean data/raw && find / -name "pedidos_clean.csv" -not -path "/proc/*" 2>/dev/null
 
 # Paso 3: entrenar los modelos. Si falla, el build falla (no se sirve sin modelos).
 RUN python -m services.modelos.entrenar

@@ -19,7 +19,7 @@ Función principal:
     2. Nulos en cantidad → imputar con mediana de valores válidos por categoría
     3. Nombres mal escritos → mapa canónico de productos del menú
     4. Errores lógicos: cantidad ≤ 0 → abs; total incorrecto → recalcular
-    5. Outliers en cantidad → capping al percentil 95 por categoría (IQR)
+    5. Outliers en cantidad → capping al percentil 95 por categoría
 
 Calibración validada con la entrevista real:
     - Pedidos únicos: un pedido contiene varias líneas de producto; el conteo
@@ -162,19 +162,53 @@ def limpiar_pedidos(
     print(f"Paso 4 – Cantidades negativas corregidas: {n_negativos:,}")
     print(f"Paso 4 – Totales recalculados: {n_total_recalculado:,}")
 
-    # ── Paso 5: Valores atípicos en 'cantidad' ────────────────────────────────
-    # Criterio: regla de Tukey con valla extrema (Q3 + 3*IQR) por categoría,
-    # con un piso de 10 unidades (supuesto: una línea de pedido normal no pasa de 10).
-    # Así se conservan los pedidos grandes pero normales (p. ej. 5 refrescos).
+    # ── Paso 5: Outliers en cantidad (capping al percentil 95 por categoría) ──
     n_outliers_total = 0
     for categoria in df["categoria"].unique():
         mascara_cat = df["categoria"] == categoria
-        q1 = df.loc[mascara_cat, "cantidad"].quantile(0.25)
-        q3 = df.loc[mascara_cat, "cantidad"].quantile(0.75)
-        limite_sup = max(q3 + 3 * (q3 - q1), 10)
+        limite_sup = df.loc[mascara_cat, "cantidad"].quantile(0.95)
         mascara_outlier = mascara_cat & (df["cantidad"] > limite_sup)
-        mediana_normal = df.loc[mascara_cat & ~mascara_outlier, "cantidad"].median()
-        n_outliers_total += int(mascara_outlier.sum())
-        df.loc[mascara_outlier, "cantidad"] = mediana_normal
+        n_outliers = int(mascara_outlier.sum())
+        df.loc[mascara_outlier, "cantidad"] = limite_sup
+        n_outliers_total += n_outliers
     df["cantidad"] = df["cantidad"].round().astype(int)
+
+    # Recalcular totales con consistencia estricta
     df["total"] = (df["precio_unitario"] * df["cantidad"]).round(2)
+    reporte["paso5_outliers_capped"] = n_outliers_total
+    print(f"Paso 5 – Outliers en cantidad (capping p95): {n_outliers_total:,}")
+
+    # ── Columnas auxiliares derivadas de fecha_hora ───────────────────────────
+    dias_es = {0: "lunes", 1: "martes", 2: "miércoles", 3: "jueves",
+               4: "viernes", 5: "sábado", 6: "domingo"}
+    df["dia_semana"] = df["fecha_hora"].dt.dayofweek.map(dias_es)
+    df["hora"] = df["fecha_hora"].dt.hour
+
+    # DATO DE LA ENTREVISTA: Quincena confirmada en días 1, 15, 16 y 30
+    df["es_quincena"] = df["fecha_hora"].dt.day.isin([1, 15, 16, 30])
+    df["es_pico_matutino"] = (df["hora"] >= 7) & (df["hora"] < 10)
+
+    # ── Métricas finales ──────────────────────────────────────────────────────
+    reporte["n_registros_clean"] = len(df)
+    reporte["n_pedidos_unicos_clean"] = int(df["pedido_id"].nunique())
+    reporte["reduccion_total"] = n_inicial - len(df)
+    print(f"\nRegistros en CSV limpio: {len(df):,} ({reporte['n_pedidos_unicos_clean']:,} pedidos únicos)")
+
+    # ── Guardar CSV limpio y JSON ─────────────────────────────────────────────
+    os.makedirs(os.path.dirname(clean_path), exist_ok=True)
+    df.to_csv(clean_path, index=False, encoding="utf-8")
+    print(f"CSV limpio guardado en: {clean_path}")
+
+    os.makedirs(os.path.dirname(reporte_path), exist_ok=True)
+    with open(reporte_path, "w", encoding="utf-8") as f:
+        json.dump(reporte, f, ensure_ascii=False, indent=2)
+    print(f"Reporte JSON guardado en: {reporte_path}")
+
+    return df, reporte
+
+
+if __name__ == "__main__":
+    df_limpio, reporte = limpiar_pedidos()
+    print("\nReporte de limpieza:")
+    for clave, valor in reporte.items():
+        print(f"  {clave}: {valor}")
